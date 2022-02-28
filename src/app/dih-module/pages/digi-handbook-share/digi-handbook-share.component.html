@@ -1,0 +1,81 @@
+	<!-- Content section start here -->
+	<div class="container-fluid MainCssAplly">
+		<div class="row HomeContentMain margnTo62">
+			<div class="container MrgnTp10">
+        <!-- <app-loader></app-loader> -->
+        <div class="col-12">
+          <div class="cardV2 MrgBtm12 dih-handbook-share">
+            <div class="row">
+              <div class="col-12 MrgnTp15 dih-username">
+                <span>Digital Insurance Handbook of</span>
+                <p class="MrgnBtmTp10">{{DigiHandbkShare.ProposerName}}</p>
+                <span>is available in your Downloads folder</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 MrgnTp15" (click)="SelShareOption(ShareOpts.View)">
+                <span class="pdf-view MrgBtm8">
+                  <i class="fa fa-file-pdf"></i>
+                </span>
+                View Handbook
+              </div>
+              <div class="col-6 MrgnTp15" (click)="SelShareOption(ShareOpts.ShareWhatsapp)">
+                <span class="whatsapp MrgBtm8">
+                  <i class="fa fa-whatsapp"></i>
+                </span>
+                Share on WhatsApp
+              </div>
+              <div class="col-6 MrgnTp15" (click)="SelShareOption(ShareOpts.ShareOtherapp)">
+                <span class="share MrgBtm8">
+                  <i class="fa fa-share-alt"></i>
+                </span>
+                Share with Other Apps
+              </div>
+            </div>
+            <div class="row">
+              <ng-container *ngIf="SelShareOpt === ShareOpts.ShareWhatsapp">
+                <div class="col-12 FormCss">
+                  <form #whatsAppForm='ngForm' autocomplete="off">
+                    <div class="row">
+                      <div class="col-4 MrgnTp15">
+                        <input type="text" name="CountryCode"
+                          class="form-control wa-cc bottom-edge" #CCInputRef='ngModel'
+                          [ngClass]="{'is-invalid': (CCInputRef.touched || CCInputRef.dirty) && !CCInputRef.valid }"
+                          placeholder="91" value="91" maxlength="7" inputmode="numeric"
+                          required [(ngModel)]="DigiHandbkShare.CountryCode">
+                      </div>
+                      <div class="col-8 MrgnTp15">
+                        <input type="text" name="MobileNo"
+                          class="form-control wa-num bottom-edge" #MNumInputRef='ngModel'
+                          [ngClass]="{'is-invalid': (MNumInputRef.touched || MNumInputRef.dirty) && !MNumInputRef.valid }"
+                          placeholder="Enter Mobile No" maxlength="10" minlength="10"  inputmode="numeric"
+                          required [(ngModel)]="DigiHandbkShare.ContactNo">
+                      </div>
+                      <div class="col-12 MrgnTp15">
+                        <a class="MDBtn block-level" (click)="SendMessage(whatsAppForm)">SEND PERSONALIZED MSG</a>
+                      </div>
+                      <div class="col-12 MrgnTp15">
+                        <a class="MDBtn block-level" (click)="SendPDF(whatsAppForm)">SEND PDF</a>
+                      </div>
+                      <div class="col-12 MrgnTp15">
+                        <a class="MDBtn block-level" (click)="Close()">CLOSE</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </ng-container>
+              <ng-container *ngIf="SelShareOpt === ShareOpts.ShareOtherapp">
+                <div class="col-12 MrgnTp15">
+                  <a class="MDBtn block-level" (click)="SendPDF()">SEND PDF</a>
+                </div>
+                <div class="col-12 MrgnTp15">
+                  <a class="MDBtn block-level" (click)="Close()">CLOSE</a>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+	<!-- Content section end here -->

@@ -1,0 +1,46 @@
+<html>
+<head>
+  <script>
+    function fetchIFAID() {
+      const locStr = replaceAll(location.search, '&amp;', '&' );
+      const IFA_ID = getParam('IFAID', locStr);
+      const DIH_IFAID = getParam('DIH_IFAID', locStr);
+      if( IFA_ID && DIH_IFAID ){
+        localStorage.setItem('IFAID', IFA_ID);
+        localStorage.setItem('DIH_IFAID', DIH_IFAID);
+        window.location = `index.html`;
+      }
+      else{
+        alert('Unable to load Digital Insurance Handbook page. \nReason : IFAID are missing.');
+      }
+    }
+
+    function getParam(name, locationStr){
+      if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(locationStr))
+          return decodeURIComponent(name[1]);
+    }
+
+    function replaceAll(str, find, replace) {
+      return str.replace(new RegExp(find, 'g'), replace);
+    }
+
+  </script>
+  <style>
+    .dih-loader
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+  </style>
+</head>
+<body onload="fetchIFAID()">
+  <div class="dih-loader">
+    <img src="/assets/Images/loader.gif" />
+  </div>
+</body>
+</html>

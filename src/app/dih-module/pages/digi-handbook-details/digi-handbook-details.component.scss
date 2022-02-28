@@ -1,0 +1,302 @@
+
+.FormCss .form-control,
+.FormCss .form-control::placeholder {
+  text-transform: none !important;
+}
+
+.NoBorder{
+  border: none !important;
+}
+
+.card {
+  padding: 10px 5px;
+  float: left;
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 4px -2px #000000;
+  -moz-box-shadow: 0px 1px 4px -2px #000000;
+  -webkit-box-shadow: 0px 1px 4px -2px #000000;
+}
+
+.cardV2 {
+  padding: 8px;
+  float: left;
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 8px;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 4px -4px #000000;
+  -moz-box-shadow: 0px 2px 4px -4px #000000;
+  -webkit-box-shadow: 0px 2px 4px -4px #000000;
+}
+
+.MrgnBtmTp10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.dih-banner{
+  margin: -8px;
+  box-shadow: 0 0 0 1px #000;
+  -moz-box-shadow: 0 0 0 1px #000;
+  -moz-box-shadow: 0 0 0 1px #000;
+}
+
+.dih-banner-img{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  img{
+    min-height: 100%;
+  }
+}
+
+.dih-banner-descr {
+  box-shadow: 0 0 0 1px #000;
+  -moz-box-shadow: 0 0 0 1px #000;
+  -moz-box-shadow: 0 0 0 1px #000;
+  padding-top: 8px;
+
+  .descr-text{
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .box-text{
+    background-color: #FCB309;
+    margin: 16px 8px 8px 8px;
+    text-align: center;
+    word-spacing: 3px;
+    box-shadow: 1px 1px 4px 0 #000;
+    -moz-box-shadow: 1px 1px 4px 0 #000;
+    -moz-box-shadow: 1px 1px 4px 0 #000;
+
+    p{
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    span{
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+.dih-handbook-form {
+  margin: 8px 0;
+
+  .BordrSubHead{
+    // font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .form-group{
+    margin-top: 12px;
+  }
+
+  .dih-handbook-capture{
+    padding: 0 3px;
+  }
+
+  .dih-handbook-tip{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 8px 0;
+
+  }
+}
+
+.dih-family-picture,
+.profile-picture{
+  align-items: stretch;
+  display: flex;
+  padding: 0px;
+  max-height: 125px;
+  max-width: 160px;
+
+  label{
+    border: 2px #ccc dashed;
+    color: #9c9c9c;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 24px 8px;
+  }
+
+  #familyPicture,
+  #profilePicture{
+    display: none;
+  }
+
+  .remove-image{
+    color: #DB0021;
+    font-size: 16px;
+    position: absolute;
+    padding: 8px;
+    top: 0px;
+    right: 0px;
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.BordrSubHead{
+  margin: 13px auto;
+}
+
+.dih-contact-num{
+  p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #6c767a;
+  }
+  .btm-line{
+    border-bottom: 1px solid #6c767a;
+    display: block;
+    float: right;
+    width: 200px;
+    margin: 0 calc(50% - 100px );
+  }
+}
+
+.GroupCustomerResult{
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1;
+  background: #fefefe;
+  box-shadow: 0 0 1px 1px #ccc;
+  margin: 4px 0;
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      font-size: 13px;
+      line-height: 15px;
+
+      // &.selected,
+      // &:hover{
+      //   background-color: lighten($color: #febd24, $amount: 30%)
+      // }
+
+      span{
+        overflow: hidden;
+        padding: 8px 4px;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+.dih-branding{
+  padding: 0 8px 8px 8px;
+
+  .BordrSubHead{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+  }
+}
+
+.dih-branding-avatar {
+  border: 2px #ccc dashed;
+  display: flex;
+  max-height: 150px;
+  max-width: 100px;
+  align-items: stretch;
+  justify-content: center;
+
+  img{
+    padding: 8px 0;
+  }
+}
+
+.dih-branding-details{
+  padding: 0 0 0 8px;
+
+  .ifa-title{
+    // font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .ifa-subtitle{
+    // font-size: 11px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .ifa-contact{
+    margin: 0px;
+
+    .ifa-mob,
+    .ifa-wap,
+    .ifa-email{
+      // font-size: 10px;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 4px 0 0 0;
+      white-space: nowrap;
+    }
+  }
+  .ifa-edit{
+    color: #848284;
+    font-size: 16px;
+    position: absolute;
+    padding: 8px 6px;
+    bottom: -8px;
+    right: -8px;
+    height: 32px;
+    width: 32px;
+  }
+
+  .ifa-social-links{
+    padding: 0;
+
+    li{
+      padding: 4px 8px 0 0;
+      font-size: 16px;
+    }
+
+    .inactive{
+      color: #ccc;
+      pointer-events: none;
+    }
+
+    .facebook{
+      color: #4267B2;
+    }
+
+    .linkedin{
+      color: #0E76A8;
+    }
+
+    .website{
+      color: #0645AD;
+    }
+
+  }
+}
+
+.PopupHeader {
+  .BordrSubHead{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+}
+
+.PopupFooter {
+  margin: 16px 0 4px 0
+}

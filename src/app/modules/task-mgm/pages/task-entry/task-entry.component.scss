@@ -1,0 +1,79 @@
+.SelectOptionMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.SelectOne,
+.SelectTwo {
+  width: 48%;
+}
+.SelectOne p,
+.SelectTwo p {
+  font-size: 12px;
+  color: #020000;
+  margin-bottom: 5px;
+}
+.SelectOptionMain select {
+  border-bottom: 1px solid #959595;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #020000;
+}
+.SelectOne input,
+.SelectTwo input {
+  width: 100%;
+  border-bottom: 1px solid #959595;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.SelectOne input[type="date"],
+.SelectTwo input[type="date"] {
+  position: relative;
+  padding: 0px;
+}
+.SelectOne input[type="date"]::-webkit-calendar-picker-indicator,
+.SelectTwo input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+.SelectOne input[type="date"]:before,
+.SelectTwo input[type="date"]:before {
+  display: block;
+  content: "";
+  background-image: url(/assets/Images/Tasks/calendar__gray.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -3px;
+  right: 6px;
+  color: #999;
+  background-size: 100%;
+}
+p.AligMarg {
+  margin-bottom: 9px;
+}
+.TextAreaM p {
+  font-size: 12px;
+  color: #020000;
+  margin-bottom: 5px;
+}
+.TextAreaM input {
+  width: 100%;
+  border-bottom: 1px solid #959595;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 0px;
+}
+.SelectOptionMain option:hover {
+  font-size: 14px;
+  padding: 0px;
+  background-color: #0a95ff;
+}

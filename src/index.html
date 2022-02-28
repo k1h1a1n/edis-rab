@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en" manifest="manifest.appcache" >
+<head>
+  <meta charset="utf-8">
+  <title>Mywealthpro</title>
+
+  <!-- <base href="/"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta http-equiv="Cache-Control" content="Cache-Control: public, max-age=2592000, immutable" content="public" />
+
+  <link rel="icon" type="image/x-icon" href="https://assetswmpro.wealthmagic.in/Datacomp/favicon.ico">
+
+  <link rel="stylesheet" href="https://assetswmpro.wealthmagic.in/Datacomp/css/styles.css">
+
+  <link rel="stylesheet" href="https://assetswmpro.wealthmagic.in/Datacomp/css/bootstrap.min.css" >
+
+  <script src="https://assetswmpro.wealthmagic.in/Datacomp/js/jquery.min.js" ></script>
+  <script src="https://assetswmpro.wealthmagic.in/Datacomp/js/bootstrap.min.js" ></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+  <link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" crossorigin >
+  <link  href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin >
+  <link  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" >
+
+</head>
+
+<body>
+
+  <div id="loader">
+    <style>
+      .application-loading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .application-loading-box {
+        width: 300px;
+        margin: 5px;
+        text-align: center;
+      }
+
+      overlay img { display: none; }
+
+      overlay.currently-loading img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+    </style>
+    <div class="application-loading-container">
+      <div id="overlay"><label></label></div>
+    </div>
+  </div>
+
+  <app-root></app-root>
+
+
+<script type="text/javascript">
+
+function init_plugins() { // add function
+$(function() {        //normal js scritps
+    "use strict";
+    $(function() {
+      if($(".HldgSarch").length>0){
+      $(".router_div").addClass("ngselect_scroll");
+      } else{
+        $(".router_div").removeClass("ngselect_scroll");
+      }
+
+      if(window.location.href.indexOf('/home')!==-1 || window.location.href.indexOf('/menu')!==-1){
+          $("#divHeader").css("display","flex");
+          $("#imgTitleLogo").css("display","none");
+      } else {
+          $("#divHeader").css("display","none");
+          $("#imgTitleLogo").css("display","block");
+      }
+    });
+  });
+
+}
+
+function myFunction() {
+    var header = document.getElementById("fundsCat_list");
+    if(header!=null){
+      var sticky = header.offsetTop;
+      if ((window.pageYOffset+50) > (sticky+50)) {
+        header.classList.remove("static_div");
+      } else {
+        header.classList.add("static_div");
+      }
+    }
+  }
+
+function ChangeTheme(strName){
+  if(document.getElementById("theme")!=null){
+    document.getElementById("theme").remove();
+  }
+  var head = document.getElementsByTagName('head')[0];
+  var style = document.createElement('link');
+  style.href = strName;
+  style.id='theme';
+  style.type = 'text/css';
+  style.rel = 'stylesheet';
+  head.appendChild(style);
+}
+
+  function toggleNgScroll(){
+    if($(".HldgSarch").length>0){
+      $(".router_div").addClass("ngselect_scroll");
+    } else{
+      $(".router_div").removeClass("ngselect_scroll");
+    }
+  }
+
+  function GetDocumentURL(url){
+    console.log(url);
+    JScript2CSharp.GetDocumentURL(url);
+  }
+
+  function PreviewDocument(url){
+    JScript2CSharp.PreviewDocument(url);
+  }
+
+  function DownloadDocument(url){
+    JScript2CSharp.DownloadDocument(url);
+  }
+
+  function call(mobNo){
+    JScript2CSharp.call(mobNo);
+  }
+
+  function sendmail(emailID){
+    JScript2CSharp.sendmail(emailID);
+  }
+
+  function OpenExternalURL(URL){
+    JScript2CSharp.OpenExternalURL(URL);
+  }
+
+  function OpenOnbordingURL(URL,BackUrl){
+    JScript2CSharp.OpenOnbordingURL(URL,BackUrl);
+  }
+
+  function OpenVideoKyc(URL,BackUrl){
+    JScript2CSharp.OpenVideoKycURL(URL,BackUrl);
+  }
+  function LoadBSENetPayment (HtmlData,BackUrl)
+  {
+    JScript2CSharp.LoadBSENetPayment(HtmlData,BackUrl);
+  }
+
+  function fnNotification(msg){
+    JScript2CSharp.fnNotification(msg);
+  }
+
+  function fnExitApp(){
+    JScript2CSharp.fnExitApp();
+  }
+
+  function fnbiometric(){
+
+    JScript2CSharp.fnbiometric();
+
+  }
+
+  function fnloginredictsuccess(strresponse){
+    var IsLoginredirect=0;
+    if(strresponsemsg.toLowerCase()=="success"){
+      IsLoginredirect=1;
+    //} else{
+     // IsBiometric=0;
+    }
+    //alert('IsBiometric : ' + IsBiometric);
+    //alert('respononse msg: ' + strresponse);
+    return IsLoginredirect;
+  }
+
+  function fnbiometricsuccess(strresponse){
+    var IsBiometric=0;
+    //if(strresponsemsg.toLowerCase()=="success"){
+      IsBiometric=1;
+    //} else{
+     // IsBiometric=0;
+   /// }
+    //alert('IsBiometric : ' + IsBiometric);
+    //alert('respononse msg: ' + strresponse);
+    return IsBiometric;
+
+  }
+
+  function fnloginredict(strresponse){
+    var Isredict=0;
+    //if(strresponsemsg.toLowerCase()=="success"){
+      Isredict=1;
+    //} else{
+     // IsBiometric=0;
+   /// }
+    //alert('IsBiometric : ' + IsBiometric);
+    //alert('respononse msg: ' + strresponse);
+    return Isredict;
+
+  }
+
+  function fnnobiometric(strresponse){
+    var Isbiometricmob=0;
+    if(strresponse!=""){
+      Isbiometricmob=Number(strresponse);
+    } else{
+      Isbiometricmob=0;
+   }
+    //alert('IsBiometric : ' + IsBiometric);
+    //alert('respononse msg: ' + strresponse);
+    return Isbiometricmob;
+
+  }
+
+
+  function fnReadNotification(notification,unReadMsgCount){
+    localStorage.setItem("notification",notification);
+    localStorage.setItem("unReadMsgCount",unReadMsgCount);
+    if(unReadMsgCount!="" && parseInt(unReadMsgCount)>0){
+      $(".clsNotiCount").css("display","table-cell");
+      $("#spanNotiCount")[0].innerText=unReadMsgCount;
+    }
+    else{
+      $(".clsNotiCount").css("display","none");
+    }
+
+  }
+
+  function fnLoginDetails() {
+    //IFAID~IFAMobileNumber~IFAEmailId~GrouID~HeadMembName//
+    var strLogiDetails="";
+    try{
+      strLogiDetails=JScript2CSharp.fnLoginDetails();
+    } catch{
+      strLogiDetails="";
+      //strLogiDetails= "LW1ujDygHdksgTka7vf3KA==|deepalig@datacomp.co.in|9820798977|103|";
+    }
+    var IsLogin=0;
+    if(strLogiDetails!=""){
+      localStorage.setItem("IFAID",strLogiDetails.split("|")[0]);
+      localStorage.setItem("IFAMobileNumber",strLogiDetails.split("|")[1]);
+      localStorage.setItem("IFAEmailId",strLogiDetails.split("|")[2]);
+      localStorage.setItem("GrouID",strLogiDetails.split("|")[3]);
+      localStorage.setItem("HeadMembName",strLogiDetails.split("|")[4]);
+      localStorage.setItem('login', 'true');
+      try {
+        var strVal=strLogiDetails.split("|")[0]+"~"+strLogiDetails.split("|")[3];
+        SaveDeviceID(strVal);
+      } catch{
+
+      }
+      IsLogin=1;
+    } else{
+      IsLogin=0;
+    }
+    return IsLogin;
+  }
+
+  function fnGetPersonalizeFlag(){
+    var str="";
+    var IsPersonalize=0;
+    try{
+      str=JScript2CSharp.fnGetPersonalizeFlag();
+      if(str!=""){
+      IsPersonalize=parseInt(str.split("|")[0]);
+      localStorage.setItem("IFAID",str.split("|")[1]);
+      localStorage.setItem("IFADetails",str.split("|")[2]);
+    }
+    } catch{
+      IsPersonalize=0;
+    }
+    return IsPersonalize;
+  }
+
+  function GetSplashScreen(path){
+    JScript2CSharp.GetSplashScreen(path);
+  }
+
+  function ReadFileData(){
+    var strFileData="";
+    try{
+      strFileData=JScript2CSharp.ReadFileData();
+    } catch{
+      strFileData="";
+       //strLogiDetails= "Ujdi5+kC5M7KmV6tgB2j3Q==|shyamsd@insuremagic.com|9821448934|58|Akash";
+    }
+  }
+
+
+  function OnReadNotification(){
+    JScript2CSharp.OnReadNotification();
+  }
+  function SaveDeviceID(strVal){
+    JScript2CSharp.SaveDeviceID(strVal);
+  }
+
+  function OpenAlertPopUp(strText ){
+    $("#divAlert").css("display","flex");
+    $(".clsAlertCancel").css("display","none");
+    $("#lblAlertTxt")[0].innerText=strText;
+    $(".clsAlertOk").off('click').on('click',function(){
+        if(callback)callback(false);
+    });
+  }
+
+  function OpenAlertPopUpCallback(strText, callback){
+    $("#divAlert").css("display","flex");
+    $(".clsAlertCancel").css("display","none");
+    $("#lblAlertTxt")[0].innerText=strText;
+    $(".clsAlertOk").off('click').on('click',function(){
+        if(callback)callback(false);
+    });
+  }
+
+  function CloseAlertPopUp(){
+    $("#divAlert").css("display","none");
+  }
+
+  function OpenConfirmPopUp(Msg,callback) {
+    $(".clsAlertCancel").css("display","block");
+    $("#lblAlertTxt")[0].innerText= Msg;
+    $("#divAlert").css("display","flex");
+
+    $(".clsAlertOk").off('click').on('click',function(){
+        callback(true);
+    });
+    $(".clsAlertCancel").off('click').on('click',function(){
+        callback(false);
+    });
+  }
+
+  function ShowMFSearch(){
+    $(".clsSearch").css("display","block");
+  }
+
+  function HideMFSearch(){
+    $(".clsSearch").css("display","none");
+  }
+
+  function GeneratePDFReport(val){
+    JScript2CSharp.GeneratePDFReport(val);
+  }
+
+  function GenerateExcelReport(val){
+    JScript2CSharp.GenerateExcelReport(val);
+  }
+</script>
+<div id="divAlert" class="div_alertcls">
+
+ <div class="alert_container">
+  <span class="whatsApp_close" style="display:none;" (click)="CloseAlertPopUp()"></span>
+  <div class="alert_bdycls">
+      <label id="lblAlertTxt"></label>
+  </div>
+  <div class="alert_ftrcls">
+  <ul class="list-inline inlineBTN2">
+      <li class="col-6 clsAlertOk"> <button id="btnAlertOK" class="MDBtn" onclick="CloseAlertPopUp()">OK</button></li>
+      <li class="col-6 clsAlertCancel" style="display: none;"> <button class="MDBtn" onclick="CloseAlertPopUp()">Cancel</button></li>
+  </ul>
+  </div>
+ </div>
+
+</div>
+  <!--End of Tawk.to Script-->
+
+</body>
+
+</html>
+

@@ -1,0 +1,18 @@
+{
+  "/imagicapi": {
+    "target": "http://imagicapi.fundzmagiconline.com:91/api",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/imagicapi": ""
+    }
+  },
+  "/MagicStoreApi": {
+    "target": "https://videomgmt.datacompwebtech.com/api/MagicStore",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/MagicStoreApi": ""
+    }
+  }
+}

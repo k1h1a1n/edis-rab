@@ -1,0 +1,660 @@
+[
+  {
+    "id" : "LI",
+    "title": "Life Insurance",
+    "type": "header",
+    "img" : "../../../../assets/Images/LifeInsu_MenuIcon.png"
+  },
+  {
+    "header" : "LI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Manage Data",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153559.png" ,
+    "submenus": [
+      {
+        "title": "Policy Entry"
+      },
+      {
+        "title": "Policy Alteration"
+      },
+      {
+        "title": "FUP Date Batch Update"
+      },
+      {
+        "title": "Premium Deposits"
+      },
+      {
+        "title": "ULIP Unit Adjustments"
+      },
+      {
+        "title": "Import Data",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153623.png" ,
+        "submenus": [
+          {
+            "title": "Create File Structure"
+          },
+          {
+            "title": "Import Policies from Excel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "header" : "LI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Customer Presentations",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153630.png" ,
+    "submenus": [
+      {
+        "title": "Premium Calendar"
+      },
+      {
+        "title": "Cash Flow Chart"
+      },
+      {
+        "title": "Comprehensive Insurance Chart"
+      }
+    ]
+  },
+  {
+    "header" : "LI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Reports",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153634.png" ,
+    "submenus": [
+      {
+        "title": "Follow Up Reports",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153638.png" ,
+        "submenus": [
+          {
+            "title": "Premiums Due"
+          },
+          {
+            "title": "Premiums Outstanding"
+          },
+          {
+            "title": "Cash Flow Due"
+          },
+          {
+            "title": "Annuity Due Statement"
+          },
+          {
+            "title": "Life Insurance Quotation"
+          }
+        ]
+      },
+      {
+        "title": "Back-office Reports",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153638.png" ,
+        "submenus": [
+          {
+            "title": "Policy Register"
+          },
+          {
+            "title": "Premium Deposits Register"
+          },
+          {
+            "title": "Comprehensive Insurance Chart"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "header" : "LI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Pre-Sales Tools",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153623.png" ,
+    "submenus": [
+      {
+        "title": "Human Life Value Calculator"
+      },
+      {
+        "title": "Income Replacement Calculator"
+      },
+      {
+        "title": "Retirement Needs Calculator"
+      },
+      {
+        "title": "Child Education Needs Calculator"
+      }
+    ]
+  },
+  {
+    "header" : "LI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Business Analytics",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153638.png" ,
+    "submenus": [
+      {
+        "title": "Top Customers List"
+      },
+      {
+        "title": "Product Wise Business"
+      },
+      {
+        "title": "Premium Per Lac SA"
+      },
+      {
+        "title": "Age wise Business Analysis"
+      }
+    ]
+  },
+  {
+    "id" : "GI",
+    "title": "General Insurance",
+    "type": "header",
+    "img" : "../../../../assets/Images/MyMenu_MenuIcon.png"
+  },
+  {
+    "header" : "GI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Masters",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153634.png" ,
+    "submenus": [
+      {
+        "title": "Motor Add-On Master"
+      },
+      {
+        "title": "Float Account Master"
+      },
+      {
+        "title": "Commission Rates"
+      },
+      {
+        "title": "Motor Settings"
+      },
+      {
+        "title": "TPA Contacts"
+      },
+      {
+        "title": "Transactions",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153559.png" ,
+        "submenus": [
+          {
+            "title": "Health Insurance Policies"
+          },
+          {
+            "title": "Motor Insurance Policies"
+          },
+          {
+            "title": "Other Insurance Policies"
+          },
+          {
+            "title": "Import Policies from Excel"
+          },
+          {
+            "title": "Float Account Transactions"
+          },
+          {
+            "title": "Cheque Reconciliation"
+          },
+          {
+            "title": "Premium Deposit Entry"
+          },
+          {
+            "title": "Commission Reconciliation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "header" : "GI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Renewals & Quotations",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153559.png" ,
+    "submenus": [
+      {
+        "title": "Health Insurance"
+      },
+      {
+        "title": "Motor Insurance"
+      },
+      {
+        "title": "Other Insurance"
+      },
+      {
+        "title": "Consolidated Renewal List"
+      }
+
+    ]
+  },
+  {
+    "header" : "GI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Quotations",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153623.png" ,
+    "submenus": [
+      {
+        "title": "Health Insurance Quotes"
+      },
+      {
+        "title": "Motor Insurance Quotes"
+      },
+      {
+        "title": "Other Insurance Quotes"
+      },
+      {
+        "title": "Health Comparative Quotes"
+      }
+
+    ]
+  },
+  {
+    "header" : "GI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Claims",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153630.png" ,
+    "submenus": [
+      {
+        "title": "Claims Browser"
+      },
+      {
+        "title": "Claim Intimation"
+      },
+      {
+        "title": "Claim Covering Letter"
+      },
+      {
+        "title": "TPA List"
+      },
+      {
+        "title": "Cashless Authorisation Forms"
+      },
+      {
+        "title": "Claim Forms"
+      },
+      {
+        "title": "Claim Procedure and CheckList"
+      }
+    ]
+  },
+  {
+    "header" : "GI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Reports",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153634.png" ,
+    "submenus": [
+      {
+        "title": "Policy Register"
+      },
+      {
+        "title": "Policy Fact Sheet"
+      },
+      {
+        "title": "Health Insurance Quotation"
+      },
+      {
+        "title": "Policy Not Received List"
+      },
+      {
+        "title": "Commission Reports",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153559.png" ,
+        "submenus": [
+          {
+            "title": "Commission Outstanding"
+          },
+          {
+            "title": "Short / Excess Commission"
+          },
+          {
+            "title": "Commission Ledger"
+          }
+        ]
+      },
+      {
+        "title": "Miscellaneous",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153559.png" ,
+        "submenus": [
+          {
+            "title": "Endorsement Intimation"
+          },
+          {
+            "title": "Float Account Ledger"
+          },
+          {
+            "title": "Health Insurance Products Browser"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "header" : "GI",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Business Analytics",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153623.png" ,
+    "submenus": [
+      {
+        "title": "Policies Drill Down"
+      },
+      {
+        "title": "Top Customers List"
+      },
+      {
+        "title": "Product wise Business"
+      },
+      {
+        "title": "Business Comparison"
+      },
+      {
+        "title" : "New Customers Acquisition"
+      },
+      {
+        "title" : "Business Lost"
+      },
+      {
+        "title": "Health Insurance MIS",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153630.png" ,
+        "submenus": [
+          {
+            "title": "Free Health Checkup Eligibility"
+          },
+          {
+            "title": "Family Health Cover Analysis"
+          },
+          {
+            "title": "Pre-existing Disease cover"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id" : "CN",
+    "title": "Common",
+    "type": "header",
+    "img" : "../../../../assets/Images/CommonItem_MenuIcon.png"
+  },
+
+  {
+    "header" : "CN",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Customer Management",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153634.png" ,
+    "submenus": [
+      {
+        "title": "Motor Add-On Master"
+      },
+      {
+        "title": "Float Account Master"
+      },
+      {
+        "title": "Commission Rates"
+      },
+      {
+        "title": "Motor Settings"
+      },
+      {
+        "title": "TPA Contacts"
+      },
+      {
+        "title": "Transactions",
+        "active": false,
+        "type": "dropdown",
+        "categoryImage" : "assets/Images/20220225-153559.png" ,
+        "submenus": [
+          {
+            "title": "Health Insurance Policies"
+          },
+          {
+            "title": "Motor Insurance Policies"
+          },
+          {
+            "title": "Other Insurance Policies"
+          },
+          {
+            "title": "Import Policies from Excel"
+          },
+          {
+            "title": "Float Account Transactions"
+          },
+          {
+            "title": "Cheque Reconciliation"
+          },
+          {
+            "title": "Premium Deposit Entry"
+          },
+          {
+            "title": "Commission Reconciliation"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "header" : "CN",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Task Management",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153634.png" ,
+    "submenus": [
+      {
+        "title": "Task List",
+        "route": "home/tasks/list"
+      },
+      {
+        "title": "Task Details",
+        "route": "home/tasks/detail"
+      },
+      {
+        "title": "Task Entry",
+        "route": "home/tasks/entry"
+      }
+    ]
+  },
+
+  {
+    "id" : "ADM",
+    "title": "Admin",
+    "type": "header",
+    "img" : "../../../../assets/Images/Admin_MenuIcon.png"
+  },
+  {
+    "header" : "ADM",
+    "icon" : "fas fa-angle-double-right",
+    "title": "User Management",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153559.png" ,
+    "submenus": [
+      {
+        "title": "Roles Master"
+      },
+      {
+        "title": "Role Privileges"
+      },
+      {
+        "title": "User Master"
+      },
+      {
+        "title": "Relationship Manager Mapping"
+      }
+    ]
+  },
+  {
+    "header" : "ADM",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Organization",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153623.png" ,
+    "submenus": [
+      {
+        "title": "Agency Master"
+      },
+      {
+        "title": "Branches"
+      },
+      {
+        "title": "Employees"
+      }
+    ]
+  },
+  {
+    "header" : "ADM",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Settings",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153559.png" ,
+    "submenus": [
+      {
+        "title": "Application Configuration"
+      },
+      {
+        "title": "My-Insurance Setup"
+      },
+      {
+        "title": "Customer Login Management"
+      },
+      {
+        "title": "Greetings Configuration"
+      },
+      {
+        "title": "Edit Profile"
+      }
+    ]
+  },
+  {
+    "header" : "ADM",
+    "icon" : "fas fa-angle-double-right",
+    "title": "My Account",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153630.png" ,
+    "submenus": [
+      {
+        "title": "Subscription Details"
+      },
+      {
+        "title": "Upgrade Subscription level"
+      },
+      {
+        "title": "Change Payment Mode"
+      },
+      {
+        "title": "Add Optional Modules"
+      },
+      {
+        "title": "Remove Optional Modules"
+      },
+      {
+        "title": "Renew Subscription"
+      },
+      {
+        "title": "Cancel Subscription"
+      },
+      {
+        "title": "Download Invoice"
+      }
+    ]
+  },
+  {
+    "header" : "ADM",
+    "icon" : "fas fa-angle-double-right",
+    "title": "SMS / Email",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153634.png" ,
+    "submenus": [
+      {
+        "title": "SMS/Email Purchase"
+      },
+      {
+        "title": "SMS/Email Usage Log"
+      }
+    ]
+  },
+  {
+    "header" : "ADM",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Alerts & Notifications",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153559.png" ,
+    "submenus": [
+      {
+        "title": "Intimation Templates"
+      },
+      {
+        "title": "Scheduling Services"
+      },
+      {
+        "title": "Schedule Service Log"
+      },
+      {
+        "title": "Scheduled Reports Management"
+      }
+    ]
+  },
+  {
+    "header" : "ADM",
+    "icon" : "fas fa-angle-double-right",
+    "title": "Miscellaneous",
+    "active": false,
+    "type": "dropdown",
+    "categoryImage" : "assets/Images/20220225-153559.png",
+    "submenus": [
+      {
+        "title": "Area Master"
+      },
+      {
+        "title": "Reset to Demo Data"
+      },
+      {
+        "title": "Reset Database"
+      },
+      {
+        "title": "Import Log"
+      },
+      {
+        "title": "Version History"
+      }
+    ]
+  }
+
+
+]

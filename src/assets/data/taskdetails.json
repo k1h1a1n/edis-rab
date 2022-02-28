@@ -1,0 +1,14 @@
+[
+    {
+        "customer_name" : "Sunil Mehta",
+        "agent_name"    : "",
+        "policy_number" : "",
+        "insurer_number": "",
+        "start_date"    : "",
+        "end_date"      : "",
+        "claim_type"    : "",
+        "claim_info"    : "",
+        "claim_status"  : "",
+        "bank_status"   : ""
+    }
+]

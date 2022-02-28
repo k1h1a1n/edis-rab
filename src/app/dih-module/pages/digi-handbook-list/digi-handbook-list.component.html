@@ -1,0 +1,86 @@
+<!-- Content section start here -->
+<div class="container-fluid MainCssAplly">
+  <div class="row HomeContentMain margnTo62 footer_active">
+    <div class="container MrgnTp10">
+      <!-- <app-loader></app-loader> -->
+      <div class="col-12">
+        <ng-container *ngIf="isResultGenerated && DigiHandbkList.length == 0; else dihList">
+          <div class="scroll_data_life">
+            <div class="nodatafound_main">
+              <div class="nodatafound_bdy">
+                <span></span>
+              </div>
+              <div class="nodatafound_ftr">
+                <p>No Handbook(s) generated</p>
+              </div>
+           </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Content section end here -->
+
+<div class="FooterBTN">
+  <ul class="row list-inline inlineBTN2">
+    <li class="col-12">
+      <a class="MDBtn block-level" (click)="CreateNewDigitalHandBook()">CREATE A NEW HANDBOOK</a>
+    </li>
+  </ul>
+</div>
+
+<ng-template #dihList>
+  <div class="row dih-handbook-list">
+    <div class="col-md-12">
+      <ng-container *ngFor="let DigiHandbk of DigiHandbkList">
+        <div class="cardV2 MrgBtm12">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="BordrSubHead">
+                <span>{{DigiHandbk.ProposerName}}</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8 cart-Table with_pad">
+              <table class="">
+                <thead>
+                  <tr>
+                    <th class="td_width_40per">Trans. No.</th>
+                    <th class="td_width_40per">Date</th>
+                    <th class="td_width_20per">Time</th>
+                    <!--
+                    <th *ngIf="DigiHandbk.isHandbookAvail" class="td_width_25per text-center">Available until</th>
+                    <th *ngIf="!DigiHandbk.isHandbookAvail" class="td_width_25per text-center">
+                      <small>Deleted from server</small>
+                    </th>
+                    -->
+                  </tr>
+                </thead>
+                <tbody class="cat_rtrnTbody">
+                  <tr>
+                    <td class="blk_Clr">{{DigiHandbk.TransID}}</td>
+                    <td class="blk_Clr">{{DigiHandbk.TranDate | date : 'dd-MM-yyyy'}}</td>
+                    <td class="blk_Clr">{{DigiHandbk.TranDate | date : 'hh:mm' }}</td>
+                    <!-- <td class="blk_Clr text-center"  [ngClass]="{'loss_clr' : !DigiHandbk.isHandbookAvail}">{{DigiHandbk.AvailUpto | date : 'dd-MM-yyyy'}}</td> -->
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-2 cloud-download">
+              <span (click)="DownloadHandbook(DigiHandbk)">
+                <i class="fa fa-cloud-download"></i>
+              </span>
+            </div>
+            <div class="col-2 share">
+              <span (click)="ShareHandbook(DigiHandbk)">
+                <i class="fa fa-share-alt"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</ng-template>

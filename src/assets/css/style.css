@@ -1,0 +1,215 @@
+* { padding:0; margin:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;  }
+body { background-color:#F2F2F2 !important; }
+/* 
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.AddCircle { width:60px; height:60px; border-radius:50%; background-color:#F7C033; color:#000; position:fixed; right:10px; bottom:10px;   display:flex; align-items: center;justify-content: center;  }
+.AddCircle i	{ font-size: 25px; }
+
+
+
+.MainTop	{     max-width: 393px; position: fixed; left: 0; right: 0; top: 50%;transform: translateY(-50%); -o-transform: translateY(-50%);-ms-transform: translateY(-50%);-moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); }
+.LoCenterText { text-align:center; }
+.LoCenterText img { width:154px; }
+.logoText { color:#020000; font-size:16px; font-weight:600; margin-bottom: 25px; }
+.BorderB { border:1px solid #707070; padding:25px 12px 12px; border-radius:7px; box-shadow: 2px 7px #00000029; }
+.form-group input { border-bottom:1px solid #707070; border-top: 0; border-left: 0; border-right: 0; border-radius: inherit; padding-left:0px; padding-right:0px; color:#020000; font-size:16px; font-weight: 600;  }
+.form-group input:focus { box-shadow:none; }
+.form-groupNew { position:relative; }
+.form-groupNew {padding-bottom:10px; }
+.form-groupNew input::placeholder	{ color:#020000; }
+/*
+.form-groupNew input:focus ~ .floating-label {
+  top: 5px;
+  bottom: 0px;
+  left: 28px;
+  font-size: 12px;
+  opacity: 1;
+}
+*/
+.floating-label {position: absolute;pointer-events: none;left: 0px;top: -12px;transition: 0.2s ease all;font-size:12px;color:#020000;font-weight: 500;}
+.form-groupNew span.changeinputype { position: absolute;right: 5px; top: 4px;display: block; width: 26px;z-index: 999999;left: auto;}
+.form-groupNew span.changeinputype img { width:30px; }
+.selectCheck label	{ color:#020000; font-weight:500; font-size:14px; display: flex; align-items: center; }
+.selectCheck label input { margin-right:10px; }
+.form-groupNew:nth-of-type(2) { padding-bottom: 0px; }
+.SubClas { margin:0 auto; width: 100%; display: flex; justify-content: center; }
+.SubClas input { width:132px; background-color:#4198B3; color:#fff; font-size:14px; outline:none; border:none; height:38px; border-radius:19px;     margin-top: 35px; }
+.terms { font-size:12px; color:#020000; text-align:center; margin-top:20px; font-weight:500; margin-bottom:0px; }
+.terms a { color:#0303FC; }
+.SubcripText { width:100%; text-align:center; margin-top: 70px; }
+.SubcripText p { font-size:15px; color:#020000; font-weight: 500; }
+
+
+/* customer css */
+
+.MainCustomer { width:393px; padding: 16px 0px; }
+.CombineClas { padding-left: 16px; }
+.RightSidebar { width:74px; top:15px; right:0; bottom:0; position:fixed; height:auto; background-color:#DAE5EE; padding:8px 0px 60px; overflow-y: scroll; overflow-x: hidden; }
+.circleBTN { width:38px; height:38px; border-radius:50%; border:1px solid #4198B3; margin:0px auto 10px; font-size:24px; line-height:32px; text-align:center; background-color:#fff; }
+.ActiveAlpha { color:#fff; background-color:#4198B3; }
+.DeactiveText	{ color:#939393; }
+
+.TablRow	{ width: 80%; }
+.HeadingName { background-color:#4198B3; color:#fff; font-size:16px; padding:10px;}
+.DataName { width:100%; display:flex; justify-content: space-between; padding: 10px 0px; border-bottom:1px solid #000; align-items: center; }
+.PolicyActive { display:flex; width:30%; justify-content: space-evenly; }
+.policy1 {width:17px; height:17px; background-color:#E77631; color:#fff; font-size: 14px; line-height: 16px;text-align: center; }
+.FirstNmae { font-weight:500; }
+.PolicyDeactive { background-color:#959595; }
+
+/* indicator css */
+
+.Bluekey { width:100%; background-color:#2777B8; color:#fff; padding:3px 0px; text-align:center; font-size:16px; }
+.MainBox { width:271px; height:220px; border-radius:8px; box-shadow: 1px 1px #00000029; box-shadow: 1px 4px 10px 0px #00000029; margin-bottom: 20px;  margin-right: 15px; margin-top: 50px; } 
+.HeadingText { text-align:center; margin:10px 0px; font-weight:600; padding-top:30px; }
+.DateEdit { background-color:#4198B3; color:#fff; border-radius:14px; padding:5px 0px; width:90%; margin:0 auto; text-align:center; background-image: url(/assets/Images/Tasks/edit-text.png);  background-repeat: no-repeat; background-position: 215px 6px; background-size: 20px; font-size: 12px; }
+.PoliciesContent { width:100%; display:flex; margin-top:15px; flex-wrap: wrap; justify-content: space-between; padding: 0px 10px; }
+.CollectContent { width:33%; }
+.ContentTitle	{ color:#020000B4; font-size:11px; margin-top: 7px; }
+.ContentData { font-size:18px; color:#020000; font-weight:600; }
+.productBoxM { width:100%; display:flex; flex-wrap: wrap; justify-content: space-between; }
+.ProductBoxC { width:110px; height:110px; border-radius:13px; background-image: linear-gradient(180deg, #EDF2F8, #AEC8D8); display: flex; flex-wrap: wrap; text-align: center; margin-bottom: 15px; }
+.ProductBoxC span { width:39px; height:39px; margin: 10px auto 0px; }
+.ProductBoxC span img { width:100%; }
+.ProductBoxC p { width:100%; color:#39616E; font-size:12px; }
+
+.bgOne { background-color:#EFF1FF; }
+.bgTwo { background-color:#FFF0F3; }
+.bgThree { background-color:#F2DDF8; }
+
+.DateColor2	{ background-color:#E77631; }
+.DateColor3 { background-color:#7E41B3 ; }
+
+.ToggleBusiness	{ width: 100%;display: flex;justify-content: center; align-items: center; font-size: 14px; font-weight: 600; margin: 10px 0px 20px; }
+.ToggleCheck { display:flex; }
+.ToggleCheck input[type="checkbox"] { position:relative; width:55px; height:30px; -webkit-appearance:none; background-color:#4caf50; outline:none; border-radius:20px; box-shadow:inset 0 0 5px rgba(0,0,0,.2); transition:.5s ; margin: 0px 20px; }
+/*.ToggleCheck input:checked[type="checkbox"]  { background-color:#03a9f4; }*/
+.ToggleCheck input[type="checkbox"]:before { content:""; position:absolute; width:30px; height:30px; border-radius:20px; top:0; left:0; background-color:#e8f5e9; transition:.5s; box-shadow:0 2px 5px rgba(0,0,0,.2); border:3px solid #4caf50; }
+.ToggleCheck input:checked[type="checkbox"]:before { left:30px; }
+.ToggleCheck input:checked[type="checkbox"] ~ label { color:#4caf50; }
+
+.CircleIcon {  position: absolute; top: 5px; left: 50%; transform: translate(-50%, 10px); }
+
+
+/* Digital Handbook */
+
+.HandbookPara { margin-top:15px; }
+.HandbookPara p	{ font-size: 12px; font-family: 'Poppins', sans-serif;  }
+.BrandHeading { font-size:16px; font-weight:500; color:#020000; position:relative; text-align:center; }
+.BrandHeading:before	{ content:""; position:absolute; background-color:#F8C033; height:2px; width:62px; bottom: 0;left: 50%;transform: translate(-50%, 5px);}
+.AddressArea { text-align:center; margin-top: 20px; }
+.AddressArea h4 { font-size:14px; color:#020000; font-weight:500; }
+.AddressArea p { font-size:11px; margin-bottom: 5px; }
+
+.GenRateSubClas { text-align:center; }
+.GenRateSubClas input { background-color:#F7C033; color:#080000C7; padding:8px 28px; font-size:18px; outline: none; border: none; border-radius: 30px;margin-top: 35px; transition:.5s ; }
+.DashedbOX { position:relative; width:100%; height:188px; border:1px dashed #707070; text-align: center; margin-bottom: 20px; color:#959595; padding-top: 80px; }
+.pictureDashed	{ position:relative; width:128px; height:157px; border:1px dashed #707070; text-align: center; margin: 20px auto; color:#959595; padding-top: 50px; }
+.file-input {opacity: 0; width: inherit; position: absolute; top: 0; left: 0; height: 100%; }
+.file-msg { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* report page */
+
+.ReportsCls { width: 110px; height: 110px; border-radius: 13px;display: flex; flex-wrap: wrap;text-align: center; margin-bottom: 15px;background-color: #E1F5FB;}
+.ReportsCls span { width: 39px; height: 39px;margin: 10px auto 0px;}
+.ReportsCls span img { width:100%; }
+.ReportsCls p { width: 100%;color: #39616E; font-size: 12px;}
+
+/* upcoming activites */
+
+.tabs-control {border: 1px solid #7070709A;background: #fff;padding-left: 5px;width: 100%;display: flex;justify-content: space-between;margin-bottom: 10px;padding: 4px 5px;}
+.tabs-control a{display: inline-block;padding: 5px 0px;margin-bottom: -2px;text-decoration: none;color: #020000;text-align:center;width:24%;text-decoration: none;font-size: 14px;}
+.tabs-control a:hover { text-decoration:none; }
+.tabs-control a.current{border-bottom: 2px solid #F7C033;font-weight:600;color:#020000;text-decoration: none;}
+.tabs-content{ padding: 0px;}
+.tabs-content > div{ display: none;}
+.tabs-content > div:first-child{display: block;}
+.box { width: 100%;line-height: 20px;}
+.ActivitiesData { background-color:#fff; padding:10px; border-radius:7px; margin-bottom: 15px; box-shadow: 0px 0px 10px -3px; }
+.ClientName { font-size:14px; font-weight:500; }
+.NamePolicy	{width: 100%;display: flex;justify-content: space-between; margin-bottom: 0px; }
+.policyNo	{ font-size: 12px; }
+.DetailsArea {width: 100%;display: flex;justify-content: space-between; }
+.IcoNArea { width:15%; text-align: center; }
+.DataArea { width:57%; }
+.StatusArea { width:23%; text-align: right; }
+.IcoNArea img	{ width: 45px; }
+.almostClosed { border-radius:4px; background-color:#07B1BF; color:#fff; font-size:10px; text-align: center; width:90px; margin-left: auto; }
+.StatusArea img { width:24px; margin-top: 20px; }
+.PolicyProd { font-size:12px; color:#020000; font-weight:500; }
+.ProdInfo { color:#020000; font-size:10px; }
+.WhenText p,
+.WhatText p { font-size:10px; color:#020000B4; margin-bottom:0px; }
+.WhenText span,
+.WhatText span  {font-size:12px; color:#020000; }
+.WhenWhatsM	{ width: 100%;display: flex; justify-content: space-between; }
+.Opend { border-radius:4px; background-color:#0755BF; color:#fff; font-size:10px; text-align: center; width:90px; margin-left: auto;  }
+.OverDuNot { font-size:10px; color:#F80505; }
+
+
+/* Task List */
+/* 
+.ExtraText { display:flex; flex-wrap: wrap; justify-content: flex-end; }
+.ExtraText span	{ width: 100%; text-align: right; font-size:10px; color:#020000; }
+.IcoNArea span	{ color:#020000; font-size:10px; }
+.StausRes1,
+.StausRes2 { font-size:10px; color:#020000; font-weight:500; }
+.SmallData { width:35% !important; }
+.BigData { width:40% !important; margin-top: 20px; }
+ */
+
+/* Task Details */
+/* 
+.WidthAuto { width:auto !important; }
+.SecondTab { width: 80% !important; margin: 20px auto;border-radius: 20px; background: #EEFAFD; color:#000000; padding: 0; border:1px solid #707070; }
+.SecondTab a { width:33.33%; background: transparent; color:#000000; font-weight:500; }
+.SecondTab a.current { color: #ffffff; background: #4198B3; border-bottom: none; }
+.SecondTab a:nth-of-type(1) { border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-right: 1px solid #707070; }
+.SecondTab a:nth-of-type(3) { border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left: 1px solid #707070; }
+.NotesEnter { width:100%; display:flex; justify-content: space-between; align-items:center; margin-top:10px; }
+.NotesText	{ font-size:11px; color:#020000; }
+.SecondTab a:nth-of-type(1).current { border-right: 0px solid #707070; }
+.SecondTab a:nth-of-type(2).current { border-left: 0px solid #707070; }
+
+.BlueTR	{ background-color:#4198B3; color:#fff; padding:8px 0px; font-size:16px; font-weight:500;   display:flex; justify-content: space-between; }
+.BlueTR div:nth-of-type(1) { width:25%; padding-left:10px; }
+.BlueTR div:nth-of-type(2) { width:28%; padding-left: 0px; }
+.BlueTR div:nth-of-type(3) { width:160px; }
+.TableClas table { width:100%; display: inline-table; background-color:#fff; box-shadow: 0px 0px 10px -3px; margin-top:20px; border-radius:7px; }
+.TableClas table tr	{ border-bottom:1px solid #959595; }
+.TableClas table tr	td { padding:10px 0px; font-size:14px; font-weight:400;  }
+.TableClas table tr	td:nth-of-type(2) { position:relative; padding-left: 22px; }
+.TableClas table tr	td:nth-of-type(2):before { content:""; position:absolute; top:5px; left:-15px; background-image:url(../images/email__1.png); background-size: 30px; width:40px; height: 40px; background-repeat: no-repeat; }
+.DelEditM img { width:24px; }
+.TableClas table td:nth-of-type(1) { padding-left:10px; }
+ */
+/* Task Form */
+
+/* .SelectOptionMain { width:100%; display:flex; justify-content: space-between; margin-bottom:15px; }
+.SelectOne,
+.SelectTwo { width:48%; }
+.SelectOne p,
+.SelectTwo p  { font-size:12px; color:#020000; margin-bottom:5px; }
+.SelectOptionMain select { border-bottom:1px solid #959595;  border-top:none; border-left:none; border-right:none; width:100%; font-size:14px; font-weight:500; color:#020000; }
+.SelectOne input,
+.SelectTwo input { width:100%; border-bottom:1px solid #959595;  border-top:none; border-left:none; border-right:none; }
+.SelectOne input[type="date"],
+.SelectTwo input[type="date"] {position: relative; padding: 0px; }
+.SelectOne input[type="date"]::-webkit-calendar-picker-indicator,
+.SelectTwo input[type="date"]::-webkit-calendar-picker-indicator {color: transparent;background: none;z-index: 1;}
+.SelectOne input[type="date"]:before,
+.SelectTwo input[type="date"]:before { display: block; content: ""; background: url(../images/calendar__gray.png) no-repeat; width: 25px;height: 25px;position: absolute; top: -3px;right: 6px; color: #999; background-size: 100%;}
+p.AligMarg	{ margin-bottom: 9px; }
+.TextAreaM p { font-size:12px; color:#020000; margin-bottom:5px; }
+.TextAreaM input { width:100%; border-bottom:1px solid #959595;  border-top:none; border-left:none; border-right:none; padding:5px 0px; }
+.SelectOptionMain option:hover { font-size:14px; padding:0px; background-color:#0a95ff; }
+
+
+ */
+

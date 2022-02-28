@@ -1,0 +1,103 @@
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+
+@import '~@angular/material/theming';
+
+// ng-select themes
+@import "~@ng-select/ng-select/themes/default.theme.css";
+// @import "~@ng-select/ng-select/themes/material.theme.css";
+// @import "~@ng-select/ng-select/themes/tabmagicv2.theme.css";
+
+// Plus imports for other components in your app.
+
+
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$tabmagicv2-primary: mat-palette($mat-indigo);
+$tabmagicv2-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$tabmagicv2-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$tabmagicv2-theme: mat-light-theme($tabmagicv2-primary, $tabmagicv2-accent, $tabmagicv2-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($tabmagicv2-theme);
+
+/* You can add global styles to this file, and also import other style files */
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+
+// Chart color
+$chart_mututal_fund: #27AE60;
+$chart_equity: #2296f3;
+$chart_debt_fund: #a5a5a5;
+$chart_money_market: #00b050;
+$chart_hybrid: #ed7d31;
+$chart_other: #F1C40F;
+
+.GraphValueLft li.MutualValue label {
+    background-color: $chart_mututal_fund;
+  }
+
+  .GraphValueLft li.EquityFunds label,.GraphValueLft li.StockFunds label, .clsEquity {
+    background-color: $chart_equity;
+  }
+
+  .GraphValueLft li.DebtFunds label,.clsDebt {
+    background-color: $chart_debt_fund;
+  }
+
+  .GraphValueLft li.MoneyMarkets label {
+    background-color: $chart_money_market;
+  }
+
+  .GraphValueLft li.HybridFunds label,.clsHybrid {
+    background-color: $chart_hybrid;
+  }
+
+  .GraphValueLft li.OthersFunds label,.clsOther {
+    background-color: $chart_other;
+  }
+
+
+
+
+  .page-wrapper.toggled .sidebar {
+    left: -300px;
+  }
+
+  // angular perfect scrollbar style
+  .sidebar .ps.ps--scrolling-y>.ps__rail-y,
+  .sidebar>.ps.ps--scrolling-x>.ps__rail-x,
+  .ps .ps__rail-x:hover,
+  .ps .ps__rail-y:hover,
+  .ps .ps__rail-x:focus,
+  .ps .ps__rail-y:focus,
+  .ps .ps__rail-x.ps--clicking,
+  .ps .ps__rail-y.ps--clicking {
+    background-color: transparent !important;
+  }
+
+  .sidebar .ps.ps--active-y>.ps__rail-y:hover,
+  .sidebar>.ps.ps--active-y>.ps__rail-y.ps--clicking {
+    width: 10px !important;
+  }
+
+  .ps__thumb-y {
+    background-color: #fff !important;
+    width: 6px!important;
+    border-radius: 0px!important;
+    opacity: .5;
+
+  }

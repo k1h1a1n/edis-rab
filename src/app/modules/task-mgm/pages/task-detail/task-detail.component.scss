@@ -1,0 +1,108 @@
+.WidthAuto {
+  width: auto !important;
+}
+.SecondTab {
+  width: 80% !important;
+  margin: 20px auto;
+  border-radius: 20px;
+  background: #eefafd;
+  color: #000000;
+  padding: 0;
+  border: 1px solid #707070;
+}
+.SecondTab a {
+  width: 33.33%;
+  background: transparent;
+  color: #000000;
+  font-weight: 500;
+}
+.SecondTab a.current {
+  color: #ffffff;
+  background: #4198b3;
+  border-bottom: none;
+}
+.SecondTab a:nth-of-type(1) {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid #707070;
+}
+.SecondTab a:nth-of-type(3) {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 1px solid #707070;
+}
+.NotesEnter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.NotesText {
+  font-size: 11px;
+  color: #020000;
+}
+.SecondTab a:nth-of-type(1).current {
+  border-right: 0px solid #707070;
+}
+.SecondTab a:nth-of-type(2).current {
+  border-left: 0px solid #707070;
+}
+
+.BlueTR {
+  background-color: #4198b3;
+  color: #fff;
+  padding: 8px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+.BlueTR div:nth-of-type(1) {
+  width: 25%;
+  padding-left: 10px;
+}
+.BlueTR div:nth-of-type(2) {
+  width: 28%;
+  padding-left: 0px;
+}
+.BlueTR div:nth-of-type(3) {
+  width: 160px;
+}
+.TableClas table {
+  width: 100%;
+  display: inline-table;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px -3px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+.TableClas table tr {
+  border-bottom: 1px solid #959595;
+}
+.TableClas table tr td {
+  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.TableClas table tr td:nth-of-type(2) {
+  position: relative;
+  padding-left: 22px;
+}
+.TableClas table tr td:nth-of-type(2):before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  background-image: url(/assets/Images/Tasks/email__1.png);
+  background-size: 30px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+.DelEditM img {
+  width: 24px;
+}
+.TableClas table td:nth-of-type(1) {
+  padding-left: 10px;
+}

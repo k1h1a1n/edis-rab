@@ -1,0 +1,262 @@
+<header class="sidebar-header">
+  <div class="sidebar-header-content">
+    <i style="color: black;padding: 15px;" class="fas fa-bars" (click)="toggleSidePanel()"></i>
+    <img style="margin-top:3px;" src="assets/Images/imagic_logo.png">
+  </div>
+</header>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-content">
+    <perfect-scrollbar>
+        <div class="sidebar-tabs">
+          <ul>
+            <li *ngFor="let menuTab of menuHdrTabs" (click)="selectMenuTab(menuTab)" 
+              [ngClass]="{'selected' : menuTab.id === selectedTab.id}"
+              [title]="menuTab.title">
+              <img  class="img-fluid" src= {{menuTab.img}}>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-title">
+          <label class="Tablabel">{{selectedTab?.title}}</label>
+        </div>
+
+      <!-- 
+      <div class="sidebar-profile">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="assets/img/user.jpg" alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-name">Jhon
+            <strong>Smith</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
+      <div class="sidebar-search">
+        <div>
+          <div class="input-group">
+            <input type="text" class="form-control search-menu" placeholder="Search...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div> 
+      -->
+      <div class="sidebar-menu">
+        <ul>
+          <li *ngFor="let menu of selectedTabMenus" [ngClass]="{'active': menu.active , 'sidebar-dropdown':menu.type === 'dropdown' , 'header-menu':menu.type === 'header'}">
+            <ng-container [ngTemplateOutlet]="menuItem" [ngTemplateOutletContext]="{menu:menu}"></ng-container>
+          </li>
+        </ul>
+      </div>
+    </perfect-scrollbar>
+  </div>
+  <div class="sidebar-footer">
+
+
+    <div>
+      <a>
+        <img class="footerImg" src="../../../../assets/Images/user_image.png">
+        <label class="profileText">Khan Afzal</label>
+      </a>
+      <a >
+        <i style="margin-left: 220px;margin-top: 20px;" class="fa fa-power-off"></i>
+      </a>
+      <a [matMenuTriggerFor]="menu">
+        <i style="margin-top: 20px;margin-right: 12px" class="fas fa-caret-right"></i>
+      </a>
+    </div>
+  
+     <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <i style="margin-right: 10px;" class="fas fa-ticket-alt fa-lg"></i> 
+        <span>Raise a Ticket</span>
+      </button>
+      <button mat-menu-item >
+        <i style="margin-right: 10px;" class="fas fa-user-edit fa-lg"></i>
+        <span>Edit Profile</span>
+      </button>
+      <button mat-menu-item>
+        <i style="margin-right: 10px;" class="fas fa-clipboard-list fa-lg"></i>
+        <span>My Tickets</span>
+      </button>
+      <button mat-menu-item>
+        <i style="margin-right:10px" class="fas fa-video fa-lg"></i>
+        <span>Video Tutorials</span>
+      </button>
+      <button style="background-color: #FF6600 ;" mat-menu-item>
+        <span style="color: #ffff;">Sign Out</span>
+      </button>
+    </mat-menu>
+
+    <!-- <div class="dropdown" dropdown>
+
+      <a href="#" dropdownToggle>
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">5</span>
+      </a>
+      <div class="dropdown-menu notifications" *dropdownMenu>
+        <div class="notifications-header">
+          <i class="fa fa-bell"></i>
+          Notifications
+        </div>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">
+          <div class="notification-content">
+            <div class="icon">
+              <i class="fas fa-check text-success border border-success"></i>
+            </div>
+            <div class="content">
+              <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In totam explicabo</div>
+              <div class="notification-time">
+                6 minutes ago
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="dropdown-item" href="#">
+          <div class="notification-content">
+            <div class="icon">
+              <i class="fas fa-exclamation text-info border border-info"></i>
+            </div>
+            <div class="content">
+              <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In totam explicabo</div>
+              <div class="notification-time">
+                Today
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="dropdown-item" href="#">
+          <div class="notification-content">
+            <div class="icon">
+              <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+            </div>
+            <div class="content">
+              <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In totam explicabo</div>
+              <div class="notification-time">
+                Yesterday
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item text-center" href="#">View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown" dropdown>
+      <a href="#" dropdownToggle>
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <div class="dropdown-menu messages" *dropdownMenu>
+        <div class="messages-header">
+          <i class="fa fa-envelope"></i>
+          Messages
+        </div>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">
+          <div class="message-content">
+            <div class="pic">
+              <img src="assets/img/user.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="message-title">
+                <strong> Jhon doe</strong>
+              </div>
+              <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In totam explicabo</div>
+            </div>
+          </div>
+
+        </a>
+        <a class="dropdown-item" href="#">
+          <div class="message-content">
+            <div class="pic">
+              <img src="assets/img/user.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="message-title">
+                <strong> Jhon doe</strong>
+              </div>
+              <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In totam explicabo</div>
+            </div>
+          </div>
+
+        </a>
+        <a class="dropdown-item" href="#">
+          <div class="message-content">
+            <div class="pic">
+              <img src="assets/img/user.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="message-title">
+                <strong> Jhon doe</strong>
+              </div>
+              <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In totam explicabo</div>
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item text-center" href="#">View all messages</a>
+
+      </div>
+    </div>
+    <div class="dropdown" dropdown>
+      <a href="#" dropdownToggle>
+        <i class="fa fa-cog"></i>
+        <span class="badge-sonar"></span>
+      </a>
+      <div class="dropdown-menu" *dropdownMenu>
+        <a class="dropdown-item" href="#">My profile</a>
+        <a class="dropdown-item" href="#">Help</a>
+        <a class="dropdown-item" href="#">Setting</a>
+      </div>
+    </div>
+     -->
+
+
+
+    
+  </div> 
+ 
+</nav>
+
+
+<ng-template #menuItem let-menu="menu">
+  <span *ngIf="menu.type !== 'dropdown'">{{menu.title}}</span>
+  <a *ngIf="menu.type === 'dropdown'" (click)='toggleDDMenu(menu)'>
+    <!-- <i style="background: none;color: brown;" class="{{menu.icon}}"></i> -->
+    <img class="categoryImage" src= {{menu.categoryImage}}>
+    <span>{{menu.title}}</span>
+    <span *ngIf="menu.badge" class="badge badge-pill" [ngClass]="menu.badge.class">{{menu.badge.text}}</span>
+  </a>
+  <div *ngIf="menu.type === 'dropdown'" class="sidebar-submenu" [@slide]="getState(menu)">
+    <ul>
+      <ng-container *ngFor="let submenu of menu.submenus" >
+        <li *ngIf="submenu.type !== 'dropdown'"  [ngClass]="{'active': submenu.active}">
+          <a (click)='redirect(submenu)'> 
+            <span>{{submenu.title}}</span>
+            <span *ngIf="submenu.badge" class="badge badge-pill" [ngClass]="submenu.badge.class">{{submenu.badge.text}}</span>
+          </a>
+        </li>
+        <li *ngIf="submenu.type === 'dropdown'" [ngClass]="{'active': submenu.active , 'sidebar-dropdown':submenu.type === 'dropdown' , 'header-menu':submenu.type === 'header'}">
+          <ng-container [ngTemplateOutlet]="menuItem" [ngTemplateOutletContext]="{menu:submenu}"></ng-container>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</ng-template>
+

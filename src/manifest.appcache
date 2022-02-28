@@ -1,0 +1,27 @@
+CACHE MANIFEST
+# v1.0.6
+index.html
+assets\css\common.scss
+assets\css\presentation.scss
+styles.scss
+assets\js\patternlock.js
+assets\js\youtubevideoplayercontrol.js
+assets\js\fontawesome.js
+assets\Images\loader.gif
+assets\Images\whatsApp_1.png
+assets\Images\Theme1\Close_Icon.png
+assets\Images\titleBar_logo.png
+assets\Images\UnderConstruction.png
+config.json
+vendor.js
+common.js
+Theme1.css
+scripts.js
+styles.js
+faviicon.ico
+polyfill.js
+main.js
+assets\Images\*.*
+
+NETWORK:
+*

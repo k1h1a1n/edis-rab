@@ -1,0 +1,423 @@
+[
+  {
+    "title": "Life Insurance",
+    "type": "header"
+  },
+  {
+    "title": "Manage Data",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Policy Entry"
+      },
+      {
+        "title": "Policy Alteration"
+      },
+      {
+        "title": "FUP Date Batch Update"
+      },
+      {
+        "title": "Premium Deposits"
+      },
+      {
+        "title": "ULIP Unit Adjustments"
+      },
+      {
+        "title": "Import Data",
+        "active": false,
+        "type": "dropdown",
+        "submenus": [
+          {
+            "title": "Create File Structure"
+          },
+          {
+            "title": "Import Policies from Excel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Customer Presentations",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Premium Calendar"
+      },
+      {
+        "title": "Cash Flow Chart"
+      },
+      {
+        "title": "Comprehensive Insurance Chart"
+      }
+    ]
+  },
+  {
+    "title": "Reports",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Follow Up Reports",
+        "active": false,
+        "type": "dropdown",
+        "submenus": [
+          {
+            "title": "Premiums Due"
+          },
+          {
+            "title": "Premiums Outstanding"
+          },
+          {
+            "title": "Cash Flow Due"
+          },
+          {
+            "title": "Annuity Due Statement"
+          },
+          {
+            "title": "Life Insurance Quotation"
+          }
+        ]
+      },
+      {
+        "title": "Back-office Reports",
+        "active": false,
+        "type": "dropdown",
+        "submenus": [
+          {
+            "title": "Policy Register"
+          },
+          {
+            "title": "Premium Deposits Register"
+          },
+          {
+            "title": "Comprehensive Insurance Chart"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pre-Sales Tools",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Human Life Value Calculator"
+      },
+      {
+        "title": "Income Replacement Calculator"
+      },
+      {
+        "title": "Retirement Needs Calculator"
+      },
+      {
+        "title": "Child Education Needs Calculator"
+      }
+    ]
+  },
+  {
+    "title": "Business Analytics",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Top Customers List"
+      },
+      {
+        "title": "Product Wise Business"
+      },
+      {
+        "title": "Premium Per Lac SA"
+      },
+      {
+        "title": "Age wise Business Analysis"
+      }
+    ]
+  },
+  {
+    "title": "Admin",
+    "type": "header"
+  },
+  {
+    "title": "User Management",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Roles Master"
+      },
+      {
+        "title": "Role Privileges"
+      },
+      {
+        "title": "User Master"
+      },
+      {
+        "title": "Relationship Manager Mapping"
+      }
+    ]
+  },
+  {
+    "title": "Organization",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Agency Master"
+      },
+      {
+        "title": "Branches"
+      },
+      {
+        "title": "Employees"
+      }
+    ]
+  },
+  {
+    "title": "Settings",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Application Configuration"
+      },
+      {
+        "title": "My-Insurance Setup"
+      },
+      {
+        "title": "Customer Login Management"
+      },
+      {
+        "title": "Greetings Configuration"
+      },
+      {
+        "title": "Edit Profile"
+      }
+    ]
+  },
+  {
+    "title": "My Account",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Subscription Details"
+      },
+      {
+        "title": "Upgrade Subscription level"
+      },
+      {
+        "title": "Change Payment Mode"
+      },
+      {
+        "title": "Add Optional Modules"
+      },
+      {
+        "title": "Remove Optional Modules"
+      },
+      {
+        "title": "Renew Subscription"
+      },
+      {
+        "title": "Cancel Subscription"
+      },
+      {
+        "title": "Download Invoice"
+      }
+    ]
+  },
+  {
+    "title": "SMS / Email",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "SMS/Email Purchase"
+      },
+      {
+        "title": "SMS/Email Usage Log"
+      }
+    ]
+  },
+  {
+    "title": "Alerts & Notifications",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Intimation Templates"
+      },
+      {
+        "title": "Scheduling Services"
+      },
+      {
+        "title": "Schedule Service Log"
+      },
+      {
+        "title": "Scheduled Reports Management"
+      }
+    ]
+  },
+  {
+    "title": "Miscellaneous",
+    "active": false,
+    "type": "dropdown",
+    "submenus": [
+      {
+        "title": "Area Master"
+      },
+      {
+        "title": "Reset to Demo Data"
+      },
+      {
+        "title": "Reset Database"
+      },
+      {
+        "title": "Import Log"
+      },
+      {
+        "title": "Version History"
+      }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+<li class="cls-iconGi IsGeneralInsuaddonatv">
+      <a id="amnuGeneInsu" class="liMenuHead" href="javascript:void(0);" style="text-shadow: none;">General Insurance</a>
+      <div class="clGeneInsu" id="divGeneInsu" style="background-color: #FBFAFA; display:none; position: absolute; z-index: 999999; width: 953px; padding: 10px; border: solid 1px #004D8D; height: auto; top: 135px; left: 0px;">
+         <div class="clsnewmenu">
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Masters</li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=449">Motor Add-On Master</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=450">Float Account Master</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=260">Commission Rates</a></li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLMotorSettings.aspx?MenuId=1097">Motor Settings</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1068">TPA Contacts</a></li>
+               <li class="submenutitle SubSubMenuHead">Transactions</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=396">Health Insurance Policies</a></li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1048">Motor Insurance Policies</a></li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1181">Other Insurance Policies</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Import/NLImport/DPUploadNLPolicyData.aspx?MenuId=425&amp;Basic=0">Import Policies from Excel</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=454">Float Account Transactions</a></li>
+               <li class="SubSubMenu WIP ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLChequeRecon.aspx?MenuId=1217">Cheque Reconciliation</a></li>
+               <li class="SubSubMenu WIP ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1211">Premium Deposit Entry</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLCommissionRecon.aspx?MenuId=491">Commission Reconciliation</a></li>
+            </ul>
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Renewals &amp; Quotations</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLHealthRenewal.aspx?MenuId=433">Health Insurance</a></li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLMotorRenewal.aspx?MenuId=1045">Motor Insurance</a></li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLRenewal.aspx?MenuId=433">Other Insurance</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLDueList.aspx?MenuID=1214">Consolidated Renewal List</a></li>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Quotations</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=276">Health Insurance Quotes</a></li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=277">Motor Insurance Quotes</a></li>
+               <li class="SubMenu IsGeneralInsoff ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1014">Other Insurance Quotes</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLHealthComparison.aspx?MenuId=937">Health Comparative Quotes</a></li>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Claims</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/ClaimStatusRegister.aspx?MenuId=464">Claims Browser</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLClaimIntimation.aspx?MenuId=438">Claim Intimation</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1209">Claim Covering Letter</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/TPAMaster.aspx?MenuId=1067">TPA List</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Downloads/CashlessPreAuthorisation.aspx?MenuId=702">Cashless Authorisation Forms</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Downloads/HealthInsuClaim.aspx?MenuId=701">Claim Forms</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Downloads/ProposalForms.aspx?MenuId=704">Claim Procedure and CheckList</a></li>
+            </ul>
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Reports</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLPolicyRegister.aspx?MenuId=494">Policy Register</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLFactSheet.aspx?MenuId=234">Policy Fact Sheet</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NlHealthQuote.aspx?MenuId=1233">Health Insurance Quotation</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLPoliNotReceList.aspx?MenuId=441">Policy Not Received List</a></li>
+               <li class="submenutitle SubSubMenuHead">Commission Reports</li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Reports/Client/DPCommiOutstandingReport.aspx?MenuId=1219">Commission Outstanding</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Reports/Client/DPShortExcessCommission.aspx?MenuId=1220">Short / Excess Commission</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Reports/Client/DPCommissionLedger.aspx?MenuId=1221">Commission Ledger</a></li>
+               <li class="submenutitle SubSubMenuHead">Miscellaneous</li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLEndorsementIntimation.aspx?MenuId=958">Endorsement Intimation</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLFloatACLedger.aspx?MenuID=956">Float Account Ledger</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLProductBrowser.aspx?MenuId=1030">Health Insurance Products Browser</a></li>
+            </ul>
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Business Analytics</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLDrillDown.aspx?MenuId=961">Policies Drill Down</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLTopCustomers.aspx?MIS=TopCust&amp;MenuId=308">Top Customers List</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLTopCustomers.aspx?MIS=ProdBisSumry&amp;MenuId=24">Product wise Business</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLBusinessComparison.aspx?MenuId=26">Business Comparison</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLTopCustomers.aspx?MIS=NewCutAcq&amp;MenuId=27">New Customers Acquisition</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLDisContPolicy.aspx?MenuId=435">Business Lost</a></li>
+               <li class="submenutitle SubSubMenuHead">Health Insurance MIS</li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLFreeHealthCheckUp.aspx?MenuId=299">Free Health Checkup Eligibility</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLFamilyHealthCover.aspx?MenuId=303">Family Health Cover Analysis</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/GeneralInsurance/NLPrediseaseCover.aspx?MenuId=305">Pre-existing Disease cover</a></li>
+            </ul>
+         </div>
+      </div>
+   </li>
+
+   <li class="cls-iconCi">
+      <a id="amnuCommonItems" class="liMenuHead" href="javascript:void(0);" style="text-shadow: none;">Common</a>
+      <div id="divCommonItems" class="clCommonItems" style="background-color: #FBFAFA; display: none; position: absolute; z-index: 999999; width: 953px; padding: 10px; border: solid 1px #004D8D; height: auto; top: 135px; left: 0px;">
+         <div class="clsnewmenu">
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Customer Management</li>
+               <li class="submenutitle SubSubMenuHead ">Customer Groups (Families)</li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=50">Customer Groups</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPGroupSplitting.aspx?MenuId=365">Split Groups</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPGroupMerging.aspx?MenuId=29">Merge Groups</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPBulkGroupMerging.aspx?MenuId=1019">Bulk Group Merging</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPSortGroupMembersNew.aspx?MenuId=364">Sort Group Members</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPReorganizeGroupCode.aspx?MenuId=367">Re-organize Group Codes</a></li>
+               <li class="submenutitle SubSubMenuHead">Customers</li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=49">Customers Master</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPMergeCustomers.aspx?MenuId=407">Merge Customers</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPCustomerBulkMerge.aspx?MenuId=983">Bulk Merge Customers</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Customer/DPCustomerBrowserSetting.aspx?MenuId=54">Customer Browser</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Import/NLImport/DPUploadCustomerData.aspx?MenuId=964">Import Customers</a></li>
+            </ul>
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Consolidated</li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/MIS/WealthMagicCRM.aspx?CRMType=1&amp;MenuId=398">CRM Centre</a></li>
+               <li class="SubSubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/MIS/DPConsolidatedWealthPortfolio.aspx?MenuId=418">Consolidated Insurance Portfolio</a></li>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Task Management</li>
+               <li class="submenutitle SubSubMenuHead ">Master</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1238">Task Type Master</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1329">Task Status Master</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=1237">Task FollowUp Master</a></li>
+               <li class="submenutitle SubSubMenuHead ">Reports</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/taskMaster/taskreport.aspx?MenuId=1331">Task FollowUp</a></li>
+            </ul>
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Reports</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Reports/Office/CompositePremiumCale.aspx?MenuId=1239">Composite Premium Calendar</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/Reports/Client/MailingLabel.aspx?MenuId=1013">Mailing Label</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/ToolsUtilities/MyAccount/ActiveCustomerList.aspx?MenuId=473">Active Customers</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/MIS/BusinessScorecard.aspx?MenuId=988">Business Scorecard</a></li>
+            </ul>
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Download</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/PDF/IMdownload/imsetup.exe" target="_blank">VMPro Data Upload Utility</a></li>
+            </ul>
+            <ul>
+               <li class="redfont" style="color: rgb(192, 0, 0); font-family: OpenSansRegular; font-size: 14px; font-weight: 600; border: 0px dashed rgb(255, 140, 0); width: 225px; height: 18px; padding: 9px 9px 9px 5px; background-color: rgb(250, 250, 255);">Business Analytics</li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/DataEntry/Tableview/DPTableView.aspx?MenuId=64">Lead Generator</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/CommunicationPanel_new.aspx?MenuId=455">Communication Panel</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/ToolsUtilities/EDocket/DPDocumentManager.aspx?MenuId=66">Documents Manager</a></li>
+               <li class="SubMenu ui-draggable ui-draggable-handle"><a href="https://uatbo.i-magic.in/ServiceRequestMF.aspx?MenuId=461">Service Requests</a></li>
+            </ul>
+         </div>
+      </div>
+   </li>

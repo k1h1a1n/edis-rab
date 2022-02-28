@@ -1,0 +1,27 @@
+.datepickerToggle{
+  background-image: url(/assets/Images/Theme1/Calendar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: rgba(255,255,255,0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 28px;
+  width: 28px;
+}
+
+.is-invalid{
+  background-image: none;
+}
+
+.form-control{
+  text-transform: lowercase;
+}
+
+::ng-deep .cdk-overlay-container{
+  z-index: 99999;
+}
+
+::ng-deep .mat-dialog-container{
+  box-shadow: none;
+}

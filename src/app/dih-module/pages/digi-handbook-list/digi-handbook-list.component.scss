@@ -1,0 +1,62 @@
+
+.card {
+  padding: 10px 5px;
+  float: left;
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 4px -2px #000000;
+  -moz-box-shadow: 0px 1px 4px -2px #000000;
+  -webkit-box-shadow: 0px 1px 4px -2px #000000;
+}
+
+.cardV2 {
+  padding: 8px;
+  float: left;
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 8px;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 4px -4px #000000;
+  -moz-box-shadow: 0px 2px 4px -4px #000000;
+  -webkit-box-shadow: 0px 2px 4px -4px #000000;
+}
+
+.MrgnBtmTp10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.dih-handbook-list{
+  .share{
+    color: #6c767a;
+    font-size: 24px;
+    text-align: center;
+    i{
+      cursor: pointer;
+      margin: 12px auto;
+    }
+  }
+
+  .cloud-download{
+    color: #4ab8a2;
+    font-size: 24px;
+    text-align: center;
+    i{
+      cursor: pointer;
+      margin: 12px auto;
+    }
+  }
+}
+
+.inactive{
+  color: #ccc !important;
+  pointer-events: none;
+}
+
+.BordrSubHead{
+  margin: 8px auto;
+}

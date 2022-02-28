@@ -1,0 +1,17 @@
+<input class="{{inputClass}}"
+  [id]="identifier" [name]="name" [min]="min"
+  [placeholder]="placeholder"
+  [(ngModel)]="value"
+  (ngModelChange)="emitValue(value)"
+  [matDatepicker]="datepicker"
+  [ngClass]="{'is-invalid': ((invalid | async) && (model.touched || model.dirty) )}">
+<span class="datepickerToggle" (click)="datepicker.open()"></span>
+<mat-datepicker #datepicker [touchUi]="true"></mat-datepicker>
+<ng-content select="label"></ng-content>
+
+<ng-container *ngIf="(invalid | async) && (model.touched || model.dirty)" >
+  <ng-content select=".invalid-feedback"></ng-content>
+</ng-container>
+
+
+

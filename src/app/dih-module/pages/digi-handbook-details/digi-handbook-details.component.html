@@ -1,0 +1,210 @@
+	<!-- Content section start here -->
+	<div class="container-fluid MainCssAplly">
+		<div class="row HomeContentMain margnTo62 footer_active">
+			<div class="container MrgnTp10">
+        <!-- <app-loader></app-loader> -->
+        <div class="col-12">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="cardV2 MrgBtm12">
+                <div class="row dih-banner">
+                  <div class="col-5 dih-banner-img">
+                    <img class="img-fluid" src="assets/Images/DIH/DIH_Banner.png" />
+                  </div>
+                  <div class="col-7 dih-banner-descr">
+                    <span class="descr-text">
+                      Digital Insurance Handbook is an amazing portfolio presentation you can give to your customers.
+                      It is a interactive PDF specially designed for best viewing experience on mobile phones.
+                      A great alternative to your favorite Comprehensive Insurance Chart
+                    </span>
+                    <!--
+                    <div class="box-text">
+                      <p>Get your 1<sup>st</sup> Handbook</p>
+                      <span>FREE</span>
+                    </div>
+                    -->
+                  </div>
+                </div>
+                <div class="row dih-handbook-form">
+                  <div class="col-12">
+                    <h2 class="BordrSubHead text-center"><span>Handbook Details</span></h2>
+                  </div>
+                  <div class="col-12 FormCss">
+                    <form #detailForm='ngForm' autocomplete="off">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <input type="text" name="ProposerName" class="form-control frmtxt" placeholder="Select Customer"
+                            [ngClass]="{'is-invalid': (custNameRef.touched || custNameRef.dirty) && !custNameRef.valid }"
+                            required #custNameRef='ngModel' [(ngModel)]="DigiHandbkShare.ProposerName"
+                            (ngModelChange) = "OnCustNameChanged($event)"
+                            (click)="OnCustNameFocused()" />
+                          <div #custListPopup class="GroupCustomerResult" [ngStyle]="{ 'display': showCustList ? 'block': 'none'}">
+                            <ul>
+                            <li *ngIf = "custListLoading" > Seraching customers  ... </li>
+                            <li *ngFor="let grpCust of custListResults$ | async"
+                                [ngClass]="{ 'selected' : grpCust.Name == DigiHandbkShare.ProposerName }"
+                                (click)="OnCustNameSelect(grpCust)">
+                                <span>{{grpCust.Name}}-{{grpCust.MembID}} ( {{grpCust.GrouID}}-{{grpCust.GrouCode}} )</span>
+                            </li>
+                            </ul>
+                          </div>
+                          <span *ngIf="custNameRef.hasError('required')" class="invalid-feedback">
+                            Customer is required.
+                          </span>
+                          <label class="LblPlce emllabel" [ngClass]="{'actv' : DigiHandbkShare.ProposerName}" for="">Select Customer</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <input type="text" name="PageCaption" class="form-control frmtxt" placeholder="Cover Page Caption"
+                          [(ngModel)]="DigiHandbkShare.PageCaption">
+                          <label class="LblPlce emllabel" [ngClass]="{'actv' : DigiHandbkShare.PageCaption}" for="">Cover Page Caption</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row dih-handbook-capture">
+                      <div class="col-6 dih-family-picture">
+                        <img #familyImage id="familyPictureImg" class="img-fluid"
+                          [ngStyle]=" { 'display' : DigiHandbkShare.FamilyPhoto ? 'block' : 'none' }" />
+                        <input type="hidden" name="FamilyPhoto" [(ngModel)]="DigiHandbkShare.FamilyPhoto" />
+                        <span class="far fa-times-circle remove-image"
+                          (click)="DigiHandbkShare.FamilyPhoto = null; familyPicture.click();"
+                          [ngStyle]=" { 'display' : DigiHandbkShare.FamilyPhoto ? 'block' : 'none' }">
+                        </span>
+                        <input #familyPicture id="familyPicture" name="familyPicture"
+                          type="file" accept="image/*;capture=camera"
+                          (change)="onFamilyPicture($event, familyImage)" />
+                        <label (click)="onCaptureOrPickImage('familyPictureImg', 'Choose your family picture')" for="familyPicture" [ngStyle]=" { 'display' : DigiHandbkShare.FamilyPhoto ? 'none' : 'block' }" >
+                          Touch to add customer’s family picture to the handbook
+                        </label>
+                      </div>
+                      <div class="col-6 dih-handbook-tip">
+                        <strong>TIP</strong>: You can download customer’s family picture from their Facebook or Instagram and use it here for handbook cover-page
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cardV2 MrgBtm12">
+                <div class="row dih-branding">
+                  <div class="col-12">
+                    <h2 class="BordrSubHead text-center"><span>Your Branding</span></h2>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-4 dih-branding-avatar" [ngClass]=" { 'NoBorder' : IFACustProfile.profile_pic}">
+                        <img id="IFAProfilePic" #profilePic class="img-fluid" (error)="profilePic.src='assets/Images/DIH/IFA_Avtar.png'" />
+                      </div>
+                      <div class="col-8 dih-branding-details">
+                        <p class="ifa-title">{{IFACustProfile.profile_name}}</p>
+                        <p class="ifa-subtitle">{{IFACustProfile.sub_title}}</p>
+
+                        <div class="row ifa-contact">
+                          <div class="col-6 ifa-mob"><span class="fa fa-mobile"></span> {{IFACustProfile.mobile_no}}</div>
+                          <div class="col-6 ifa-wap"><span class="fa fa-whatsapp"></span> {{IFACustProfile.whatsapp_no}}</div>
+                          <div class="col-12 ifa-email"><span class="fa fa-at"></span> {{IFACustProfile.email_id}}</div>
+                          <div class="col-12 ifa-social-links">
+                            <ul>
+                              <li class="fab fa-linkedin" [ngClass]=" IFACustProfile.in_url ? 'linkedin' : 'inactive' "></li>
+                              <li class="fa fa-facebook-square" [ngClass]=" IFACustProfile.fb_url ? 'facebook' : 'inactive' "></li>
+                              <li class="fa fa-globe" [ngClass]=" IFACustProfile.web_url ? 'website' : 'inactive' "></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="fa fa-user-edit ifa-edit" (click)="OnEditProfile(profile_popup);"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+	<!-- Content section end here -->
+
+  <div class="FooterBTN">
+		<ul class="row list-inline inlineBTN2">
+      <li class="col-12">
+        <button  class="MDBtn block-level" (click)="ProcessDigitalHandBook()"
+          [ngClass]="{'disabled': (detailForm.valid && detailForm.submitted )}">
+            GENERATE HANDBOOK
+        </button>
+      </li>
+		</ul>
+	</div>
+
+
+<digi-handbook-popup #profile_popup (OnCancel)="ResetProfile()">
+  <div class="row PopupHeader">
+    <div class="col-12">
+      <h2 class="BordrSubHead text-center"><span>Update Profile</span></h2>
+    </div>
+  </div>
+  <div class="row PopupContent">
+    <div class="col-12 FormCss">
+      <form #profileForm='ngForm' autocomplete="off">
+        <div class="row">
+          <div class="col-12" *ngFor="let formInput of profileInputs">
+            <div class="form-group">
+              <input class="form-control frmtxt"
+                [type]="formInput.type"
+                [name]="formInput.name"
+                #inputRef='ngModel'
+                [ngClass]="{'is-invalid': (inputRef.touched || inputRef.dirty) && !inputRef.valid }"
+                [(ngModel)]="IFACustProfile[formInput.name]"
+                [placeholder]="formInput.placeholder"
+                [required]="formInput.isRequired"
+                [pattern]="formInput.pattern"
+                [attr.inputmode]="formInput.inputmode || ''"
+                [minlength]="formInput.minlength || null"
+                [maxlength]="formInput.minlength || null"
+              />
+              <span *ngIf="inputRef.hasError('required')" class="invalid-feedback">
+                {{formInput.placeholder}} is required.
+              </span>
+              <span *ngIf="inputRef.hasError('pattern')" class="invalid-feedback">
+                {{formInput.placeholder}} is not valid.
+              </span>
+              <span *ngIf="inputRef.hasError('minlength')" class="invalid-feedback">
+                {{formInput.placeholder}} should have {{formInput.minlength}} digits.
+              </span>
+              <label class="LblPlce emllabel" [ngClass]="{'actv' : inputRef.value}" for="">
+                {{formInput.label}}
+              </label>
+            </div>
+          </div>
+          <div class="col-6 profile-picture">
+            <img #profileImage id="profilePictureImg" class="img-fluid"
+              [ngStyle]=" { 'display' : DigiHandbkShare.ProfilePhoto ? 'block' : 'none' }" />
+            <input type="hidden" name="profile_pic" [(ngModel)]="DigiHandbkShare.ProfilePhoto" />
+            <span class="far fa-times-circle remove-image"
+              (click)="DigiHandbkShare.ProfilePhoto = null; IFACustProfile.profile_pic = null; profilePicture.click();"
+              [ngStyle]=" { 'display' : DigiHandbkShare.ProfilePhoto ? 'block' : 'none' }">
+            </span>
+            <input #profilePicture id="profilePicture" name="profilePicture"
+              type="file" accept="image/*;capture=camera"
+              (change)="onProfilePicture($event, profileImage)" />
+            <label (click)="onCaptureOrPickImage('profilePictureImg', 'Choose your profile picture')" for="profilePicture" [ngStyle]=" { 'display' : DigiHandbkShare.ProfilePhoto ? 'none' : 'block' }" >
+              Touch to add your picture here
+              <br><br>
+              Resolution 350 x 450
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row PopupFooter">
+    <div class="col-6">
+      <a class="MDBtn block-level" (click)="OnUpdateProfile(profileForm, profile_popup)">Save</a>
+    </div>
+    <div class="col-6">
+      <a class="MDBtn block-level" (click)="profileForm.reset();">Reset</a>
+    </div>
+  </div>
+</digi-handbook-popup>
