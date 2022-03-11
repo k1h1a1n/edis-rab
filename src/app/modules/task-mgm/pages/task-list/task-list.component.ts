@@ -1,50 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-import { TaskdetailsService } from '../../services/taskdetails.service';
+import { Component, OnInit } from "@angular/core";
+import { TaskdetailsService } from "../../services/taskdetails.service";
 
 @Component({
-  selector: 'app-task-list',
-  templateUrl: './task-list.component.html',
-  styleUrls: ['./task-list.component.scss']
+  selector: "app-task-list",
+  templateUrl: "./task-list.component.html",
+  styleUrls: ["./task-list.component.scss"],
 })
 export class TaskListComponent implements OnInit {
-  taskDetails = [];
-  selectedTab : any;
-  selectedTabtaskDetails = [];
-  taskDetailsHdrTabs =[];
-  constructor(public taskdetailservice: TaskdetailsService) { 
+  
+  TaskTypes = [
+    {id: "ALL", title: "All Tasks"},
+    {id: "T3", title: "Overdue"},
+    {id: "T1", title: "Open"},
+    {id: "T2", title: "Closed"}
+  ];
 
-    this.taskDetails = taskdetailservice.gettaskDetailsList();
-    if( this.taskDetails?.length == 0 ){
-      taskdetailservice.loadTaskDetails().subscribe( taskDetails => {
-        this.taskDetails = taskDetails;
-        this.processtaskDetails();
-      });
-    }
-    else{
-      this.processtaskDetails();
-    }
-  }
+  selectedTask: any;
+  taskDetails : any[];
+  fileteredTasks : any[];
+  constructor(public taskdetailservice: TaskdetailsService) {}
 
   ngOnInit(): void {
-  }
-
-  processtaskDetails()
-  {
-    if( this.taskDetails?.length > 0 )
-    {
-      this.taskDetailsHdrTabs = this.taskDetails.filter( taskDetails => {
-        return taskDetails.type == 'header';
-      });
-      this.selecttaskdetailTab(this.taskDetailsHdrTabs[0]);
-    }
-  }
-
-  selecttaskdetailTab(taskdetailTab){
-    this.selectedTab = taskdetailTab;
-    this.selectedTabtaskDetails = this.taskDetails.filter( taskdetail => {
-      return taskdetail.header == this.selectedTab.id;
+    this.selectedTask = this.TaskTypes[0];
+    this.taskdetailservice.loadTaskDetails().subscribe( details => {
+      this.taskDetails = details;
+      this.filterTasks(this.selectedTask);
     });
   }
 
+  filterTasks(task : any){
+    console.log('filterTasks >>', task);
+    this.selectedTask = task;
+    if( task.id === 'ALL' ){
+      this.fileteredTasks = this.taskDetails;
+    }
+    else{
+      this.fileteredTasks = this.taskDetails.filter( _task => _task.task_type === task.id);
+    }
+    console.log('fileteredTasks >>', this.fileteredTasks);
 
+  }
 }

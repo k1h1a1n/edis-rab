@@ -1,112 +1,137 @@
 [
     {
-    "id"    : "OD",
-    "title" : "Overdue",
-    "type"  : "header"
+      "task_type": "T1",
+      "customer_name": "Sunil Mehta",
+      "policy_number": "734379349",
+      "bank_name": "ICICI Lombard",
+      "agent_name": "Hemant",
+      "PolicyProduct": "Motor Claim",
+      "ProductInfo": "MH02 BY 1299",
+      "start_date": "23/11/21",
+      "deadline": "01/02/22",
+      "credittype": "Bank Credit",
+      "claim_status": "Claim Approved. Awaiting",
+      "bank_status": "Open",
+
+      "activities": [
+        {
+            "date" : "01-03-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "C"
+        },
+        {
+            "date" : "01-02-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "S"
+        },
+        {
+            "date" : "01-03-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "C"
+        },
+        {
+            "date" : "01-02-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "S"
+        },
+        {
+            "date" : "01-03-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "C"
+        },
+        {
+            "date" : "01-02-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "S"
+        },
+        {
+            "date" : "01-03-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "C"
+        },
+        {
+            "date" : "01-02-2022",
+            "descr" : "Initimate a claim",
+            "create_by" : "Hemant",
+            "status": "S"
+        }
+      ]
     },
     {
-        "header"        : "OD",
-        "title"         : "Overdue",
-        "customer_name" : "Sunil Mehta 1",
-        "policy_number" : "734379349",
-        "bank_name"     : "ICICI Lombard",
-        "agent_name"    : "Hemant",
-        "PolicyProduct" : "Motor Claim",
-        "ProductInfo"   : "MH02 BY 7066",
-        "start_date"    : "23/11/21",
-        "deadline"      : "01/02/22",
-        "credittype"   : "Bank Credit",
-        "claim_status"  : "Claim Approved. Awaiting",
-        "bank_status"   : "Almost closed"
+      "task_type": "T1",
+      "customer_name": "Sumit Mehta",
+      "policy_number": "734379349",
+      "bank_name": "ICICI Lombard",
+      "agent_name": "Hemant",
+      "PolicyProduct": "Motor Claim",
+      "ProductInfo": "MH02 BY 2199",
+      "start_date": "23/11/21",
+      "deadline": "01/02/22",
+      "credittype": "Bank Credit",
+      "claim_status": "Claim Approved. Awaiting",
+      "bank_status": "Open"
     },
     {
-        "header"        : "OD",
-        "title"         : "Overdue",
-        "customer_name" : "Sunil Mehta 1",
-        "policy_number" : "734379349",
-        "bank_name"     : "ICICI Lombard",
-        "agent_name"    : "Hemant",
-        "PolicyProduct" : "Motor Claim",
-        "ProductInfo"   : "MH02 BY 7066",
-        "start_date"    : "23/11/21",
-        "deadline"      : "01/02/22",
-        "credittype"   : "Bank Credit",
-        "claim_status"  : "Claim Approved. Awaiting",
-        "bank_status"   : "Almost closed"
+      "task_type": "T2",
+      "customer_name": "Sunil Mehta",
+      "policy_number": "734379349",
+      "bank_name": "ICICI Lombard",
+      "agent_name": "Hemant",
+      "PolicyProduct": "Motor Claim",
+      "ProductInfo": "MH02 BY 7066",
+      "start_date": "23/11/21",
+      "deadline": "01/02/22",
+      "credittype": "Bank Credit",
+      "claim_status": "Claim Approved. Awaiting",
+      "bank_status": "Almost closed"
     },
     {
-        "header"        : "OD",
-        "title"         : "Overdue",
-        "customer_name" : "Sunil Mehta 5",
-        "policy_number" : "734379349",
-        "bank_name"     : "ICICI Lombard",
-        "agent_name"    : "Hemant",
-        "PolicyProduct" : "Motor Claim",
-        "ProductInfo"   : "MH02 BY 7066",
-        "start_date"    : "23/11/21",
-        "deadline"      : "01/02/22",
-        "credittype"   : "Bank Credit",
-        "claim_status"  : "Claim Approved. Awaiting",
-        "bank_status"   : "Almost closed"
+      "task_type": "T2",
+      "customer_name": "Paresh Mehta",
+      "policy_number": "734379349",
+      "bank_name": "ICICI Lombard",
+      "agent_name": "Hemant",
+      "PolicyProduct": "Motor Claim",
+      "ProductInfo": "MH02 BY 6077",
+      "start_date": "23/11/21",
+      "deadline": "01/02/22",
+      "credittype": "Bank Credit",
+      "claim_status": "Claim Approved. Awaiting",
+      "bank_status": "Almost closed"
     },
     {
-        "id"    : "TY",
-        "title" : "Today",
-        "type"  : "header"
+      "task_type": "T3",
+      "customer_name": "Suresh Mehta",
+      "policy_number": "734379349",
+      "bank_name": "ICICI Lombard",
+      "agent_name": "Hemant",
+      "PolicyProduct": "Motor Claim",
+      "ProductInfo": "MH02 BY 5066",
+      "start_date": "23/11/21",
+      "deadline": "01/02/22",
+      "credittype": "Bank Credit",
+      "claim_status": "Claim Approved. Awaiting",
+      "bank_status": "Overdue"
     },
     {
-        "header"        : "TY",
-        "title"         : "Today",
-        "customer_name" : "Sunil Mehta 2",
-        "policy_number" : "734379349",
-        "bank_name"     : "ICICI Lombard",
-        "agent_name"    : "Hemant",
-        "PolicyProduct" : "Motor Claim",
-        "ProductInfo"   : "MH02 BY 7066",
-        "start_date"    : "23/11/21",
-        "deadline"      : "01/02/22",
-        "type"          : "Bank Credit",
-        "claim_status"  : "Claim Approved. Awaiting",
-        "bank_status"   : "Almost closed"
-    },
-    {
-        "id"    : "7D",
-        "title" : "7 Days",
-        "type"  : "header"
-    },
-    {
-        "header"        : "7D",
-        "title"         : "7 Days",
-        "customer_name" : "Sunil Mehta 3",
-        "policy_number" : "734379349",
-        "bank_name"     : "ICICI Lombard",
-        "agent_name"    : "Hemant",
-        "PolicyProduct" : "Motor Claim",
-        "ProductInfo"   : "MH02 BY 7066",
-        "start_date"    : "23/11/21",
-        "deadline"      : "01/02/22",
-        "type"          : "Bank Credit",
-        "claim_status"  : "Claim Approved. Awaiting",
-        "bank_status"   : "Almost closed"
-    },
-    {
-        "id"    : "LR",
-        "title" : "Later",
-        "type"  : "header"
-    },
-    {
-        "header"        : "LR",
-        "title"         : "Later",
-        "customer_name" : "Sunil Mehta 4",
-        "policy_number" : "734379349",
-        "bank_name"     : "ICICI Lombard",
-        "agent_name"    : "Hemant",
-        "PolicyProduct" : "Motor Claim",
-        "ProductInfo"   : "MH02 BY 7066",
-        "start_date"    : "23/11/21",
-        "deadline"      : "01/02/22",
-        "type"          : "Bank Credit",
-        "claim_status"  : "Claim Approved. Awaiting",
-        "bank_status"   : "Almost closed"
+      "task_type": "T3",
+      "customer_name": "Anil Mehta",
+      "policy_number": "734379349",
+      "bank_name": "ICICI Lombard",
+      "agent_name": "Hemant",
+      "PolicyProduct": "Motor Claim",
+      "ProductInfo": "MH02 BY 6055",
+      "start_date": "23/11/21",
+      "deadline": "01/02/22",
+      "credittype": "Bank Credit",
+      "claim_status": "Claim Approved. Awaiting",
+      "bank_status": "Overdue"
     }
-]
+  ]

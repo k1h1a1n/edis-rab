@@ -2,62 +2,57 @@
 
     <div class="container-fluid">
 
-        <div class="AddCircle" routerLink="/home/tasks/entry" >
+        <div class="AddCircle" routerLink="/home/tasks/entry">
             <i class="fa fa-plus" aria-hidden="true"></i>
         </div>
 
 
         <div class="content">
             <div class="detail">
-                <div class="tabs-control" >
-                    <a *ngFor="let Tab of taskDetailsHdrTabs" (click)="selecttaskdetailTab(Tab)" 
-                    [ngClass]="{'selected' : Tab.id === selectedTab.id}"
-                    >{{Tab.title}}</a>
+                <div style="cursor: pointer;" class="tabs-control">
+                    <a *ngFor="let TaskType of TaskTypes" (click)="filterTasks(TaskType)"
+                        [ngClass]="{'selected' : TaskType.id === selectedTask.id}">{{TaskType.title}}</a>
                 </div>
                 <div class="tabs-content">
-
                     <!-- tab -->
-
-                    
-                        <div class="box">
-                            <div *ngFor="let Tablist of selectedTabtaskDetails" class="ActivitiesData">
-                                <div class="NamePolicy">
-                                    <div class="ClientName">{{Tablist.customer_name}}</div>
-                                    <div class="policyNo ExtraText">Policy No. {{Tablist.policy_number}}
-                                        <span>{{Tablist.bank_name}}</span>
-                                    </div>
-                                </div>
-
-                                <div class="DetailsArea">
-                                    <div class="IcoNArea">
-                                        <img src="/assets/Images/Tasks/General_Insurance.png">
-                                        <span>{{Tablist.agent_name}}</span>
-                                    </div>
-                                    <div class="DataArea SmallData">
-                                        <div class="PolicyProd">{{Tablist.PolicyProduct}}</div>
-                                        <div class="ProdInfo">{{Tablist.ProductInfo}}</div>
-
-                                        <div class="WhenWhatsM">
-                                            <div class="WhenText">
-                                                <p>Start Date</p>
-                                                <span>{{Tablist.start_date}}</span>
-                                            </div>
-                                            <div class="WhatText">
-                                                <p>Deadline</p>
-                                                <span>{{Tablist.deadline}}</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="StatusArea BigData">
-                                        <div class="StausRes1">{{Tablist.claim_status}}</div>
-                                        <div class="StausRes2">{{Tablist.credittype}}</div>
-                                        <div class="almostClosed">{{Tablist.bank_status}}</div>
-                                    </div>
+                    <div class="box" routerLink="/home/tasks/detail">
+                        <div *ngFor="let taskDetail of fileteredTasks" class="ActivitiesData">
+                            <div class="NamePolicy">
+                                <div class="ClientName">{{taskDetail.customer_name}}</div>
+                                <div class="policyNo ExtraText">Policy No. {{taskDetail.policy_number}}
+                                    <span>{{taskDetail.bank_name}}</span>
                                 </div>
                             </div>
+                            <div class="DetailsArea">
+                                <div class="IcoNArea">
+                                    <img src="/assets/Images/Tasks/General_Insurance.png">
+                                    <span>{{taskDetail.agent_name}}</span>
+                                </div>
+                                <div class="DataArea SmallData">
+                                    <div class="PolicyProd">{{taskDetail.PolicyProduct}}</div>
+                                    <div class="ProdInfo">{{taskDetail.ProductInfo}}</div>
 
+                                    <div class="WhenWhatsM">
+                                        <div class="WhenText">
+                                            <p>Start Date</p>
+                                            <span>{{taskDetail.start_date}}</span>
+                                        </div>
+                                        <div class="WhatText">
+                                            <p>Deadline</p>
+                                            <span>{{taskDetail.deadline}}</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="StatusArea BigData">
+                                    <div class="StausRes1">{{taskDetail.claim_status}}</div>
+                                    <div class="StausRes2">{{taskDetail.credittype}}</div>
+                                    <div class="almostClosed">{{taskDetail.bank_status}}</div>
+                                </div>
+                            </div>
                         </div>
+
+                    </div>
                     <!-- tab -->
                 </div>
             </div>

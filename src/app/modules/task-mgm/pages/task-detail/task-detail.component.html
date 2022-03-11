@@ -10,48 +10,48 @@
 
         <!-- add button end -->
 
-        <div class="ActivitiesData">
-            <div class="NamePolicy">
-                <div class="ClientName">Sunil Mehta</div>
-                <div class="policyNo ExtraText">Policy No. 734379349
+        <div id="tab-1">
+            <div class="box">
+            
+            <div class="ActivitiesData">
+                <div class="NamePolicy">
+                    <div class="ClientName">Sunil Mehta</div>
+                    <div class="policyNo ExtraText">Policy No. 734379349
                     <span>ICICI Lombard</span>
-                </div>
-            </div>
-
-            <div class="DetailsArea">
-                <div class="IcoNArea">
-                    <img src="/assets/Images/Tasks/General_Insurance.png">
-                    <span>Hemant</span>
-                </div>
-                <div class="DataArea SmallData">
-                    <div class="PolicyProd">Motor Claim</div>
-                    <div class="ProdInfo">MH02 BY 7066</div>
-                    <div class="WhenWhatsM">
-                        <div class="WhenText">
-                            <p>Start Date</p>
-                            <span>23/11/21</span>
-                        </div>
-                        <div class="WhatText">
-                            <p>Deadline</p>
-                            <span>01/02/22</span>
-                        </div>
                     </div>
                 </div>
-                <div class="StatusArea BigData">
-                    <div class="StausRes1">Claim Approved. Awaiting</div>
-                    <div class="StausRes2">Bank credit</div>
-                    <div class="almostClosed">Almost closed</div>
+                
+                <div class="DetailsArea">
+                    <div class="IcoNArea">
+                        <img src="/assets/Images/Tasks/General_Insurance.png">
+                        <span>Hemant</span>
+                    </div>
+                    <div class="DataArea SmallData">
+                        <div class="PolicyProd">Motor Claim</div>
+                        <div class="ProdInfo">MH02 BY 7066</div>
+                        
+                        <div class="WhenWhatsM">
+                            <div class="WhenText">
+                            <p>Start Date</p>
+                            <span>23/11/21</span>
+                            </div>
+                            <div class="WhatText">
+                            <p>Deadline</p>
+                            <span>01/02/22</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="StatusArea BigData">
+                        <div class="StausRes1">Claim Approved. Awaiting</div>
+                        <div class="StausRes2">Bank credit</div>
+                        <div class="almostClosed">Almost closed</div>
+                    </div>
                 </div>
+              </div>
+            
             </div>
-
-            <div class="NotesEnter">
-                <div class="NotesText">Notes entered by the user</div>
-                <div class="DelEditM">
-                    <img src="/assets/Images/Tasks/delete_icon.png">
-                    <img src="/assets/Images/Tasks/edit_icon.png" style="width:28px;" routerLink="/home/tasks/entry">
-                </div>
-            </div>
-        </div>
+          </div>
 
         <div class="Bluekey">
             Activies in this Task
@@ -61,16 +61,14 @@
         <div class="content">
             <div class="detail">
                 <div class="tabs-control SecondTab">
-                    <a href="#tab-1">All</a>
-                    <a href="#tab-2">Completed</a>
-                    <a href="#tab-3">Scheduled</a>
+                    <a *ngFor="let activitytype of ActivityTypes" (click)="filterActivity(activitytype)"
+                    [ngClass]="{'selected' : activitytype.id === selectedActivity.id}"
+                    >{{activitytype.title}}</a>
                 </div>
                 <div class="tabs-content">
 
-                    <!-- tab 1 start -->
-
-                    <div id="tab-1">
-                        <div class="box TableClas">
+                    <!-- tab -->
+                        <div class="box TableClas" >
 
                             <div class="BlueTR">
                                 <div>Date</div>
@@ -79,114 +77,15 @@
                             </div>
 
                             <table>
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
+                                <tr *ngFor="let activity of filteredActivity">
+                                    <td>{{activity.date}}</td>
+                                    <td>{{activity.create_by}}</td>
+                                    <td colspan="2">{{activity.descr}}</td>
                                 </tr>
                             </table>
-
                         </div>
-                    </div>
-
-                    <!-- tab 2 start -->
-
-                    <div id="tab-2">
-                        <div class="box TableClas">
-
-                            <div class="BlueTR">
-                                <div>Date</div>
-                                <div>Type By</div>
-                                <div>Description</div>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-                            </table>
-
-                        </div>
-                    </div>
-
-                    <!-- tab 3 start -->
-
-                    <div id="tab-3">
-                        <div class="box TableClas">
-
-                            <div class="BlueTR">
-                                <div>Date</div>
-                                <div>Type By</div>
-                                <div>Description</div>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-
-                                <tr>
-                                    <td>10-01-22</td>
-                                    <td>Hemant</td>
-                                    <td colspan="2">Intimate a claim</td>
-                                </tr>
-                            </table>
-
-                        </div>
-                    </div>
-
+                    
+                    <!-- tab -->
 
                 </div>
             </div>

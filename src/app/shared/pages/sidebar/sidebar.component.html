@@ -247,7 +247,7 @@
     <ul>
       <ng-container *ngFor="let submenu of menu.submenus" >
         <li *ngIf="submenu.type !== 'dropdown'"  [ngClass]="{'active': submenu.active}">
-          <a (click)='redirect(submenu)'> 
+          <a (click)='redirect(submenu)'>
             <span>{{submenu.title}}</span>
             <span *ngIf="submenu.badge" class="badge badge-pill" [ngClass]="submenu.badge.class">{{submenu.badge.text}}</span>
           </a>

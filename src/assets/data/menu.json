@@ -482,6 +482,10 @@
       {
         "title": "Task Entry",
         "route": "home/tasks/entry"
+      },
+      {
+        "title": "Customer",
+        "route": "home/tasks/customer"
       }
     ]
   },
