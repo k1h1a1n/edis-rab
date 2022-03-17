@@ -52,13 +52,12 @@
     </div>
   </div>
 </nav>
-
 <div class="page-wrapper" [ngClass]="{'toggled' : getSideBarState()}">
   <app-sidebar></app-sidebar>
   <main class="page-content">
     <div class="container-fluid">
       <div class="router_div">
-        <router-outlet></router-outlet>
+
         <under-construction></under-construction>
         <!--
         <div class="row">
@@ -75,6 +74,7 @@
             Created by <strong>Azouaoui Mohamed</strong>
         </div>
         -->
+        <router-outlet></router-outlet>
       </div>
       <div class="overlay" (click)="toggleSidebar()" [ngClass]="{'show' : !getSideBarState()}"></div>
     </div>

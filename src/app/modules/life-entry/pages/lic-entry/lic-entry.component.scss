@@ -1,0 +1,310 @@
+
+body{
+    display: block;
+}
+br {
+    display:none;
+}
+
+.ch{
+    background-color: #fff;
+    color: #F1772E;
+    border: 1px solid #F1772E;
+    padding: 5px 15px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+// .AdvanceShow input:hover {
+//     background-color: #F1772E;
+//     color: #fff;
+// }
+#btnControl {
+    display: none;
+}
+.test{
+    background-color: #F1772E;
+    color: #fff;
+}
+.AdvanceShow {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 2%;
+}
+
+.DivideInput {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.main{
+    width: 85%;
+    margin: auto;
+}
+
+
+.innerCommonHead_2 {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 7%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0px 1px 0px;
+    color: #2C698D;
+    line-height: 36px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    background: #C8E4F0;
+    border-bottom: solid 0px #b4cbe3;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+#vehicle1{
+    width: 15px;
+    height: 15px;
+}
+
+
+table, td, th {
+    border: 1px solid black;
+    padding: 6px;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    height: 30px;
+    text-align: center;
+    background-color: #F6AC69;
+  }
+  
+   ul.horizontal li {
+    float: left;
+    cursor: pointer;
+  }
+  
+  ul.horizontal {
+    float: left;
+    margin: 0 0 3em 0;
+    padding: 2;
+    list-style: none;
+    background-color: #309BAE;
+    border-bottom: 1px solid #ccc;
+    // border-top: 1px solid #ccc;
+    box-shadow: 0 0 4px 0px #ccc;
+    text-align: center;
+  }
+  
+  ul.horizontal li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    position: relative;
+    line-height: 32px;
+    padding: 0 16px 0 16px;
+    white-space: nowrap;
+    border-right: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  ul.horizontal li a.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+
+.DivideInputneft {
+    margin-top: 3%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 37% 37% 37%  ;
+    grid-template-rows: 30% 30% 30% 30% ;
+    align-items: left;
+    grid-gap:5px  
+}
+
+.DivideInputmore {
+    margin-top: 3%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 37% 37% 37%  ;
+    grid-template-rows: 30% 30% 30%  ;
+    margin-bottom: 15px;
+    align-items:left;
+    grid-gap:20px  
+}
+
+
+
+
+  .switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	// position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #d3d3d3;
+	color: #000000;
+	font-size: 14px;
+	line-height: 0.4;
+	text-align: center;
+	padding: 10px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+    // width: 33%;
+    font-weight: 300;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+    text-align: center;
+}
+
+.switch-field input:checked + label {
+	background-color: #F6AC69;
+	box-shadow: none;
+    color: #fff;
+    text-align: center;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 8px 0 0 8px;
+    height:25px;
+    width: 50px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 8px 8px 0;
+    height: 25px;
+    width: 50px;
+}
+.delIcon{
+    height: 6%;
+    width: 6%;
+}
+
+.HeadingText {
+    color: #309BAE !important;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.formBlueBTN:hover {
+    color: #ffffff !important;
+    background-color: #F1772E !important;
+    background-position: 10px -17px !important;
+    text-decoration: none;
+}
+
+.formBlueBTN {
+    /* float: left; */
+    padding: 0px 6px;
+    font-size: 12px;
+    min-width: 120px;
+    width: auto !important;
+    background: transparent;
+    color: #000000 !important;
+    border: 1px solid #F1772E !important;
+    border-radius: 5px;
+    line-height: 30px;
+    height: auto;
+    cursor: pointer;
+    background-repeat: no-repeat !important;
+    background-size: 20px !important;
+    background-position: 10px 5px !important;
+    padding-left: 38px;
+    padding-right: 22px;
+    text-align: center;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.innerCommonHead {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #2C899A;
+    padding: 15px 0px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.addDoc{
+    margin-top: 40px;
+    position: absolute;
+    right: 13%;
+}
+
+.numip{
+    height: 25px;
+    width: 40%;
+}
+
+.btn-change{
+    background-color: #F1772E;
+    color: #fff;
+}
+
+
+b{
+    font-weight: 450;
+    color: rgb(12, 12, 12);
+    font-size: 12px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input{
+  width:220px;
+  height: 30px;
+}
+
+select{
+    width:220px;
+    height: 30px;
+}

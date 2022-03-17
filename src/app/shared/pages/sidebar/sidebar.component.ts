@@ -109,7 +109,7 @@ export class SidebarComponent implements OnInit {
   }
 
   redirect(menu){
-    console.log('redirect', menu);
+    console.log('red', menu);
     this.toggleMenu(menu);
     this.sidebarservice.redirect(menu.route, menu);
   }

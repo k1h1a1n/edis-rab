@@ -14,7 +14,8 @@
     "categoryImage" : "assets/Images/20220225-153559.png" ,
     "submenus": [
       {
-        "title": "Policy Entry"
+        "title": "Policy Entry",
+        "route": "home/life-entry/poilicy-entry"
       },
       {
         "title": "Policy Alteration"

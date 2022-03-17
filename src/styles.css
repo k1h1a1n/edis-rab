@@ -3623,7 +3623,7 @@ a.anchor_cls, .anchor_cls
 .widget_input
 {
   border: 1px solid #CFD8DC !important;
-  background-color: #F2F2F2 !important;
+  /* background-color: #F2F2F2 !important; */
 }
 .ng-select.custom.widget_input
 {
@@ -3633,11 +3633,11 @@ a.anchor_cls, .anchor_cls
 .ng-select.custom.widget_input .ng-select-container
 {
   border: 1px solid #CFD8DC !important;
-  background-color: #F2F2F2 !important;
+  /* background-color: #F2F2F2 !important; */
 }
 .FormCss select.form-control.widget_input, .SelecterInpt select.widget_input {
   background-image: url(/assets/Images/SelectInputBGPng.png);
-  background-color: #f2f2f2 !important;
+  /* background-color: #f2f2f2 !important; */
 }
 
 .YrsRager input

@@ -14,6 +14,7 @@ const routes: Routes = [
     children: [
       {path: 'digital-handbook', loadChildren: () => import('./dih-module/dih-routing.module').then(m => m.DIHRoutingModule)},
       {path: 'tasks', loadChildren: () => import('./modules/task-mgm/task-mgm-routing.module').then(m => m.TaskMgmRoutingModule)},
+      {path: 'life-entry', loadChildren: () => import('./modules/life-entry/life-entry-routing.module').then(m => m.LifeEntryRoutingModule)},
     ]
   },
   {

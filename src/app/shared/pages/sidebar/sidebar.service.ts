@@ -47,6 +47,7 @@ export class SidebarService {
   redirect(url, menu){
     this.router.navigateByUrl('/').then(() => {
       this.router.navigate([url], { state : menu });
+      console.log(url , 'apna url')
     });
   }
 
