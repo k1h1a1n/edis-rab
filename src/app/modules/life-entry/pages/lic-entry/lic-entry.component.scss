@@ -1,55 +1,70 @@
+// header 
 
-body{
-    display: block;
-}
-br {
-    display:none;
-}
-
-.ch{
-    background-color: #fff;
-    color: #F1772E;
-    border: 1px solid #F1772E;
-    padding: 5px 15px;
-    font-weight: 600;
-    color: #000;
-    border-radius: 5px;
-    width: 250px;
-    cursor: pointer;
-}
-// .AdvanceShow input:hover {
-//     background-color: #F1772E;
-//     color: #fff;
-// }
-#btnControl {
-    display: none;
-}
-.test{
-    background-color: #F1772E;
-    color: #fff;
-}
-.AdvanceShow {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 2%;
-}
-
-.DivideInput {
-    margin-top: 3%;
-    width: 100%;
+.innerCommonHead {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    border-bottom: solid 1px #2C899A;
+    padding: 15px 0px;
     align-items: center;
+    margin-bottom: 15px;
+    div{
+        color: #309BAE !important;
+        font-weight: 400;
+        font-size: 21px;
+    input {
+        font-size: 12px;
+        width: auto !important;
+        background: transparent;
+        border: 1px solid #F1772E !important;
+        border-radius: 5px;
+        line-height: 30px;
+        height: auto;
+        cursor: pointer;
+        background-repeat: no-repeat !important;
+        background-size: 20px !important;
+        background-position: 10px 5px !important;
+        text-align: center;
+        margin-left: 7px;
+        margin-right: 7px;
+        font-weight: 600;
+        display: inline-block;
+        transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        font-family: 'Poppins', sans-serif;
+    }
+    input:hover {
+        color: #ffffff !important;
+        background-color: #F1772E !important;
+        background-position: 10px -17px !important;
+    }
+}
 }
 
-.main{
-    width: 85%;
-    margin: auto;
+//header
+
+// Basic Detail Inputs 
+
+.BasicDetailInputs {
+    margin-top: 3%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 37% 37% 37%  ;
+    grid-template-rows: 30% 30% 30% 30% ;
+    align-items: left;
+    grid-gap:5px;
+    div{
+        img{
+            margin-left: 8px;
+        }
+    }  
 }
 
+// Basic Detail Inputs
 
-.innerCommonHead_2 {
+
+//Rider Table Header
+.RiderTableHeader {
     float: left;
     margin-bottom: 20px;
     margin-top: 7%;
@@ -64,13 +79,84 @@ br {
     background: #C8E4F0;
     border-bottom: solid 0px #b4cbe3;
 }
+//Rider Table Header
 
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
+
+//Rider Table
+  .RiderTable{
+  table {
+    border: 1px solid black;
+    padding: 6px;
+    border-collapse: collapse;
+    width: 100%;
+    td{
+        border: 1px solid black;
+        padding: 6px;
+    }
+    th{
+        border: 1px solid black;
+        padding: 6px;
+        height: 30px;
+        text-align: center;
+        background-color: #F6AC69;
+    }
+  }
+}
+//RiderTable
+
+//PlanPeriodDetails //Divide INput
+.PlanPeriodDetails {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+//PlanPeriodDetails
+
+//ShowAdvButton
+.ShowAdvButton {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 2%;
+    #emptyspace{
+        margin-top: 200px;
+    }
+}
+//ShowAdvButton
+
+
+br{
+    display: none;
 }
 
+.ch{
+    background-color: #fff;
+    color: #F1772E;
+    border: 1px solid #F1772E;
+    padding: 5px 15px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#btnControl {
+    display: none;
+}
+.test{
+    background-color: #F1772E;
+    color: #fff;
+}
+
+
+
+.main{
+    width: 85%;
+    margin: auto;
+}
 
 #vehicle1{
     width: 15px;
@@ -78,22 +164,7 @@ tr {
 }
 
 
-table, td, th {
-    border: 1px solid black;
-    padding: 6px;
-  }
-  
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th {
-    height: 30px;
-    text-align: center;
-    background-color: #F6AC69;
-  }
+
   
    ul.horizontal li {
     float: left;
@@ -107,7 +178,6 @@ table, td, th {
     list-style: none;
     background-color: #309BAE;
     border-bottom: 1px solid #ccc;
-    // border-top: 1px solid #ccc;
     box-shadow: 0 0 4px 0px #ccc;
     text-align: center;
   }
@@ -212,57 +282,7 @@ table, td, th {
     width: 6%;
 }
 
-.HeadingText {
-    color: #309BAE !important;
-    font-weight: 400;
-    font-size: 21px;
-}
 
-.formBlueBTN:hover {
-    color: #ffffff !important;
-    background-color: #F1772E !important;
-    background-position: 10px -17px !important;
-    text-decoration: none;
-}
-
-.formBlueBTN {
-    /* float: left; */
-    padding: 0px 6px;
-    font-size: 12px;
-    min-width: 120px;
-    width: auto !important;
-    background: transparent;
-    color: #000000 !important;
-    border: 1px solid #F1772E !important;
-    border-radius: 5px;
-    line-height: 30px;
-    height: auto;
-    cursor: pointer;
-    background-repeat: no-repeat !important;
-    background-size: 20px !important;
-    background-position: 10px 5px !important;
-    padding-left: 38px;
-    padding-right: 22px;
-    text-align: center;
-    margin-left: 7px;
-    margin-right: 7px;
-    font-weight: 600;
-    display: inline-block;
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-.innerCommonHead {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid 1px #2C899A;
-    padding: 15px 0px;
-    align-items: center;
-    margin-bottom: 15px;
-}
 
 .addDoc{
     margin-top: 40px;

@@ -7,51 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeEntry</title>
 </head>
-
 <body>
     <div class="main">
         <div class="innerCommonHead">
-            <div class="HeadingText">L.I.C Policy Entry</div>
-
-            <div class="BtnRight">
-
-                <input type="submit" name="" value="Save" class="formBlueBTN"
-                    style="width:85px; background-image: url(assets/Images/save_BTN.png);">
-
-                <input type="submit" name="" value="Reset" class="formBlueBTN"
-                    style="width:93px; background-image: url(assets/Images/reset_BTN.png);">
-
+            <div >L.I.C Policy Entry
+            </div>
+            <div>
+                <input  value="Save" style="background-image: url(assets/Images/save_BTN.png);">
+                <input  value="Reset" style="background-image: url(assets/Images/reset_BTN.png);">
             </div>
         </div>
-        <div class="DivideInputneft">
-            <div class="DivideOne">
+
+        <div class="BasicDetailInputs">
+            <div>
                 <p><b>Policy Holder Name</b></p>
                 <br>
                 <input type="text" maxlength="100">
-                <img style="margin-left: 8px;" (click)="addRow()" src="assets/Images/iconAddDetails.png">
+                <img src="assets/Images/iconAddDetails.png">
             </div>
-            <div class="DivideTwo">
+            <div>
                 <p><b>Group Code</b></p>
                 <br>
                 <input type="text">
             </div>
-            <div class="DivideOne">
+            <div>
                 <p><b>Date of Birth</b></p>
                 <br>
                 <input type="date">
             </div>
             
-            <div class="DivideOne">
+            <div>
                 <p><b>Policy Number</b></p>
                 <br>
                 <input type="number" maxlength="10">
             </div>
-            <div class="DivideTwo">
+            <div>
                 <p><b>Commencement Date</b></p>
                 <br>
                 <input type="date">
             </div>
-            <div class="DivideOne">
+            <div>
                 <p><b>Plan</b></p>
                 <br>
                 <select name="" id="">
@@ -102,15 +97,14 @@
                 <br>
                 <input type="number" maxlength="10">
             </div>
-
         </div>
 
-        <div class="innerCommonHead_2">
+        <div class="RiderTableHeader">
             <div>
                 Riders Opted in this Policy
             </div>
         </div>
-        <div>
+        <div class="RiderTable">
             <table>
                 <tbody>
                     <tr>
@@ -121,35 +115,26 @@
                     </tr>
                     <tr>
                         <td> <input type="checkbox" id="vehicle1"> &nbsp; Double Accident Benefit</td>
-                        <td (click)="Editable11()"><input (change)="ip1($event)" *ngIf="ipO1" class="numip"
-                                type="number" maxlength="10"><b *ngIf="!ipO1">{{ipO}}</b></td>
-                        <td (click)="Editable12()"><input (change)="ip2($event)" *ngIf="ipO2" class="numip"
-                                type="number"><b *ngIf="!ipO2">{{ipT}}</b></td>
-                        <td (click)="Editable13()"><input (change)="ip3($event)" *ngIf="ipO3" class="numip"
-                                type="number"><b *ngIf="!ipO3">{{ipTh}}</b></td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
                     </tr>
                     <tr>
                         <td> <input type="checkbox" id="vehicle1"> &nbsp; Term Rider Benefit</td>
-                        <td (click)="Editable21()"> <input (change)="ip4($event)" *ngIf="ipO4" class="numip"
-                                type="number"><b *ngIf="!ipO4">{{ipF}}</b></td>
-                        <td (click)="Editable22()"><input (change)="ip5($event)" *ngIf="ipO5" class="numip"
-                                type="number"><b *ngIf="!ipO5">{{ipFi}}</b></td>
-                        <td (click)="Editable23()"><input (change)="ip6($event)" *ngIf="ipO6" class="numip"
-                                type="number"><b *ngIf="!ipO6">{{ipS}}</b></td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
                     </tr>
                     <tr>
                         <td> <input type="checkbox" id="vehicle1"> &nbsp; Critical Illness Rider</td>
-                        <td (click)="Editable31()"><input (change)="ip7($event)" *ngIf="ipO7" class="numip"
-                                type="number"><b *ngIf="!ipO7">{{ipSe}}</b></td>
-                        <td (click)="Editable32()"><input (change)="ip8($event)" *ngIf="ipO8" class="numip"
-                                type="number"><b *ngIf="!ipO8">{{ipE}}</b></td>
-                        <td (click)="Editable33()"><input (change)="ip9($event)" *ngIf="ipO9" class="numip"
-                                type="number"><b *ngIf="!ipO9">{{ipN}}</b></td>
+                        <td>20</td>
+                        <td>500</td>
+                        <td>1000</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="DivideInput">
+        <div class="PlanPeriodDetails">
             <div>
                 <p><b>GST</b></p>
                 <br>
@@ -167,27 +152,27 @@
             </div>
         </div>
 
-        <div class="AdvanceShow">
+        <div class="ShowAdvButton">
             <div>
                 <input (change)="showAdv($event)" type="checkbox" id="btnControl">
                 <label [ngClass]="advance ? 'test' : 'ch'" for="btnControl" class="ch">Show Advance options</label>
             </div>
-        </div>
-        <div *ngIf="!advance" style="margin-top: 200px;">
+            <div id="emptyspace" *ngIf="!advance">
+            </div>
         </div>
 
         <div *ngIf="advance">
             <ul class="horizontal" id="nav">
                 <li *ngFor="let state of states" (click)="setStateAsActive(state)">
                     <a [class.active]="state === activeState">
-                        {{ state }}
+                        {{ state.tab }}
                     </a>
                 </li>
             </ul>
         </div>
-        <div *ngIf='current'>
+        <div *ngIf='active'>
             <div style="height: 400px;">
-                <div class="DivideInput">
+                <div class="PlanPeriodDetails">
                     <div>
                         <p><b>First Unpaid Premium (F.U.P.) Date </b></p>
                         <br>
@@ -209,7 +194,7 @@
 
                 </div>
 
-                <div class="DivideInput">
+                <div class="PlanPeriodDetails">
                     <div>
                         <p><b>First Unpaid Loan Int.Date (FULI) </b></p>
                         <br>
@@ -228,7 +213,7 @@
 
                 </div>
 
-                <div class="DivideInput">
+                <div class="PlanPeriodDetails">
                     <div>
                         <p><b>Paid-Up Value </b></p>
                         <br>
@@ -250,9 +235,9 @@
             <hr>
         </div>
 
-        <div *ngIf='nominee'>
+        <div *ngIf='active'>
             <div style="height: 400px;">
-                <div class="DivideInput">
+                <div class="PlanPeriodDetails">
                     <div>
                         <p><b>Nominee Type</b></p>
                         <br>
@@ -276,7 +261,7 @@
                     </div>
                 </div>
 
-                <div class="DivideInput">
+                <div class="PlanPeriodDetails">
                     <div>
                         <p><b>Appointee Name</b></p>
                         <br>
@@ -453,9 +438,9 @@
         </div>
 
         <div *ngIf='doc'>
-            <div style="height: 400px;">
+            <div class="RiderTable" style="height: 400px;">
                 <div><img class="addDoc" (click)="addRow()" src="assets/Images/iconAddDetails.png"></div>
-                <div class="DivideInput">
+                <div class="PlanPeriodDetails">
                     <table>
                         <tbody>
                             <tr>
@@ -483,12 +468,12 @@
 
         <div *ngIf='notes'>
             <div style="height: 400px;">
-                <div class="DivideInput">
+                <div class="PlanPeriodDetails">
                     <textarea name="" id="" cols="150" rows="7"></textarea>
                 </div>
             </div>
             <hr>
-        </div>
+        </div> 
     </div>
 </body>
 
